@@ -50,6 +50,7 @@ Each item should link to the actual product, be it a google spreadsheet, google 
 - [Product Backlog](https://trello.com/b/6P0P3TpV/cop-4331-sample)
 - [Sprint Backlog](https://trello.com/b/6P0P3TpV/cop-4331-sample)
 - [Requirements](https://trello.com/b/6P0P3TpV/cop-4331-sample)
+- [Trello Board](https://trello.com/b/o27NsHIz/moment-of-muscle)
 - [Burndown Chart](https://www.google.com/search?tbm=isch&q=sprint+burndown+chart)
 - [Velocity Chart](https://www.google.com/search?tbm=isch&q=agile+velocity+chart)
 - System Architecture
