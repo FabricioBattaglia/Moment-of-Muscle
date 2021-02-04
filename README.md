@@ -47,9 +47,9 @@ certain range, at a cheaper price.
 
 Each item should link to the actual product, be it a google spreadsheet, google doc, github markdown file, etc. Do not link to a markdown file that contains only a link to another location - link directly from the appropriate item below. Failure to adhere to this criteria wil result in the associated artifact not being graded. Add any additional items required for the specific sprint submission.
 
-- [Product Backlog](https://trello.com/b/6P0P3TpV/cop-4331-sample)
-- [Sprint Backlog](https://trello.com/b/6P0P3TpV/cop-4331-sample)
-- [Requirements](https://trello.com/b/6P0P3TpV/cop-4331-sample)
+- [Product Backlog](https://trello.com/b/o27NsHIz/moment-of-muscle)
+- [Sprint Backlog](https://trello.com/b/o27NsHIz/moment-of-muscle)
+- [Requirements](https://trello.com/b/o27NsHIz/moment-of-muscle)
 - [Trello Board](https://trello.com/b/o27NsHIz/moment-of-muscle)
 - [Burndown Chart](https://www.google.com/search?tbm=isch&q=sprint+burndown+chart)
 - [Velocity Chart](https://www.google.com/search?tbm=isch&q=agile+velocity+chart)
