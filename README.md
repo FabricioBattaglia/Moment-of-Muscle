@@ -51,8 +51,8 @@ Each item should link to the actual product, be it a google spreadsheet, google 
 - [Sprint Backlog](https://trello.com/b/o27NsHIz/moment-of-muscle)
 - [Requirements](https://trello.com/b/o27NsHIz/moment-of-muscle)
 - [Trello Board](https://trello.com/b/o27NsHIz/moment-of-muscle)
-- [Burndown Chart](https://www.google.com/search?tbm=isch&q=sprint+burndown+chart)
-- [Velocity Chart](https://www.google.com/search?tbm=isch&q=agile+velocity+chart)
+- [Burndown Chart](https://cdn.discordapp.com/attachments/776175060896841752/807660961032175616/unknown.png)
+- [Velocity Chart](https://cdn.discordapp.com/attachments/776175060896841752/807660886398337034/unknown.png)
 - System Architecture
 - Source Code
 - Automated Tests
