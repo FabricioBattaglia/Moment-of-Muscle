@@ -57,3 +57,32 @@ Each item should link to the actual product, be it a google spreadsheet, google 
 - Source Code
 - Automated Tests
 - Product Demonstration 
+
+## Task Allocation
+
+Member 1 - main tasking
+
+Member 2 - main tasking
+
+In this section, each group member needs to provide a brief description of what they worked on during the sprint. Keep this short and to the point. Your trello board and commit history will provide the details. 
+
+# Sprint 2
+
+- [Product Backlog](https://trello.com/b/o27NsHIz/moment-of-muscle)
+- [Sprint Backlog](https://trello.com/b/o27NsHIz/moment-of-muscle) 
+- [Requirements](https://trello.com/b/o27NsHIz/moment-of-muscle)
+- [Trello Board](https://trello.com/b/o27NsHIz/moment-of-muscle)
+- [Burndown Chart](https://cdn.discordapp.com/attachments/776175060896841752/807660961032175616/unknown.png)
+- [Velocity Chart](https://cdn.discordapp.com/attachments/776175060896841752/807660886398337034/unknown.png)
+- System Architecture
+- Source Code
+- Automated Tests
+- Product Demonstration 
+
+## Task Allocation
+
+Member 1 - main tasking
+
+Member 2 - main tasking
+
+**note**: For this sprint, I am anticipating that you will continue to work on the stories carried over from Sprint 1, with a focus on the design aspect of your system. I am expecting your architecture document and diagrams to reflect the system only in the context of these user stories, with some generalization to help plan for the other items currently in the backlog. I am not expecting a significant amount of implementation at this point, if any at all.
