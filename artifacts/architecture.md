@@ -2,9 +2,17 @@ Populate each section with information as it applies to your project. If a secti
 
 # Program Organization
 
-You should have your context, container, and component (c4model.com) diagrams in this section, along with a description and explanation of each diagram and a table that relates each block to one or more user stories. 
+[System Context Diagram](https://cdn.discordapp.com/attachments/776175060896841752/809574937463226368/SystemContextDiagram.png)
+A simple System Context Diagram, showing the interactions of the Software System
 
-See Code Complete, Chapter 3 and https://c4model.com/
+[Container Diagram](https://cdn.discordapp.com/attachments/804845091570319380/810244649082945566/ContainerDiagram.png)
+A zoom into the Moment of Muscle system, showing how it will use a mobile app and how it will comunicate with the database
+
+[Component Diagram](https://cdn.discordapp.com/attachments/776175060896841752/809574930277728326/ComponentDiagram.png)
+The structural blocks of the mobile app, showing the functions the app will have and their link to the database
+
+[User stories - Blocks relationship](https://cdn.discordapp.com/attachments/804845091570319380/810260575963316224/User-Block-Relation.png)
+A table with lines connecting which block solves each user stories.
 
 # Code Design
 
