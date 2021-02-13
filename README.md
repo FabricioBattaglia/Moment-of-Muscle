@@ -74,7 +74,8 @@ In this section, each group member needs to provide a brief description of what 
 - [Trello Board](https://trello.com/b/o27NsHIz/moment-of-muscle)
 - [Burndown Chart](https://cdn.discordapp.com/attachments/776175060896841752/807660961032175616/unknown.png) 
 - [Velocity Chart](https://cdn.discordapp.com/attachments/776175060896841752/807660886398337034/unknown.png)
-- [System Architecture](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
+- [System Architecture-GitHub](https://github.com/FabricioBattaglia/Moment-of-Muscle/blob/master/artifacts/architecture.md)
+- [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
 - Source Code
 - Automated Tests
 - Product Demonstration 
