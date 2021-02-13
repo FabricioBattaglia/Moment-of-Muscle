@@ -38,60 +38,68 @@ You should have one or more user interface screens in this section. Each screen 
 
 See Code Complete, Chapter 3
 
-# Resource Management
+# Resource Management 
+The Moment of Muscle application manages their own resources at the moment and is being developed on Android Studio.
 
-See Code Complete, Chapter 3
+# Security 
+We will be storing data in a MySQL database. We will use standard data encryption practices when dealing with accounts/user information. Users will be able to recover their username/password if lost/stolen.
 
-# Security
+# Performance 
+Our performance goals are for the application to be lightweight and have short and direct features, which are meaningful and easy for users to use. This will save a lot on the overhead of the project and result in a quick application.
 
-See Code Complete, Chapter 3
-
-# Performance
-
-See Code Complete, Chapter 3
-
-# Scalability
-
-See Code Complete, Chapter 3
+# Scalability 
+We plan to make Moment of Muscle available on the Android app store for users to download. We have a clear and defined plan for our architecture to meet future demand. When hitting a certain number of users we plan to get more servers and continually test our application to make sure that our database records are fast/accurate. Moment of Muscle is positioning itself to be able to accept large quantities of users. Our 5 developers are the only ones with access to Moment of Muscle at the moment, so scaling is not currently an issue in our development phase. 
 
 # Interoperability
+We are going to use JTDS.jar library for connecting with Database our Android Application to MS SQL Database. 
+Internationalization/Localization
+Since the developers are also the users at this point, there is no reason to display error/help/warning boxes or messages.
 
-See Code Complete, Chapter 3
+# Input/Output 
+The following 3 tables below will interact together to be able to create an Account, set up a profile and post/accept jobs. Each account will also have a profile. After having an account setup you will be able to post or accept jobs.
+To set up an account you will input your username and password and email. After your account creation is finished, you will be prompted to create a profile. All the fields in the Profile are listed below. After that the user will have the ability to accept or post jobs.
+ 
+Account
+-UserID_PK
+-Username
+-Password
+-Email
 
-# Internationalization/Localization
+Profile
+-UserID_FK
+-FirstName
+-LastName
+-City
+-State
+-Zip
+-Address
+-Categories
+-Bio
+-Rating
 
-See Code Complete, Chapter 3
+Jobs
+-UserID_FK
+-Category
+-TimeStamp
+-Worker
 
-# Input/Output
+# Error Processing 
+Error processing will be done when the user enters a false username or password, or attempts to create an account that already has that username existing in the Moment of Muscle database. At that point text will prompt the user directions.
+• The system will back up and try again when it detects a fault. If the first answer is wrong, it would back up to a point at which it knew everything was all right and continue from there.
+• The system will have auxiliary code to use if it detects a fault in the primary code.
 
-See Code Complete, Chapter 3
-
-# Error Processing
-
-See Code Complete, Chapter 3
-
-# Fault Tolerance
-
-See Code Complete, Chapter 3
-
-# Architectural Feasibility
-
-See Code Complete, Chapter 3
+# Architectural Feasibility 
+We do not have any concerns with Moment of Muscles architectural feasibility. At the moment we are just pulling from a MySQL database and are testing the application with a low amount of data to make sure everything is set up for scale.
 
 # Overengineering
+Moment of Muscle is being designed keeping in mind KISS (Keep it simple, stupid), doing only the necessary code for the fundamental parts of the code.
 
-See Code Complete, Chapter 3
-
-# Build-vs-Buy Decisions
-
-This section should list the third party libraries your system is using and describe what those libraries are being used for.
-
-See Code Complete, Chapter 3
+# Build-vs-Buy Decisions 
+Our database will use MySQL and will interact with the System software using the JTDS Library. The development environment for Moment of Muscle (MOM) will be done on Android Studio, which is a free open source application.
 
 # Reuse
-
-See Code Complete, Chapter 3
+We will test all pre existing software, test cases, data formats and other materials before releasing anything. Making sure first and foremost that the reused software aligns to our architecture goals.
 
 # Change Strategy
+Because building a software product is a learning process for both the programmers and the users, the product is likely to change throughout its development. 
 
-See Code Complete, Chapter 3
