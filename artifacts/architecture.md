@@ -33,15 +33,14 @@ This activity diagram includes a subclass of createNewUser and isUserSignedIn an
 
 # Data Design
 
+[Data Activity Diagram](https://cdn.discordapp.com/attachments/804845091570319380/810274680267210822/unknown.png)
 If you are using a database, you should have a basic Entity Relationship Diagram (ERD) in this section. This diagram should describe the tables in your database and their relationship to one another (especially primary/foreign keys), including the columns within each table. 
 
 See Code Complete, Chapter 3
 
 # Business Rules
 
-You should list the assumptions, rules, and guidelines from external sources that are impacting your program design. 
-
-See Code Complete, Chapter 3
+Business rules and decisions will be decided by the 5 developers working on Moment of Muscle (MOM). We will adhere to Dr. Hollanders software development guidelines.
 
 # User Interface Design
 [Here is a link to some user interface mockups](https://cdn.discordapp.com/attachments/804845091570319380/810342429139402752/Diagram.jpg)
