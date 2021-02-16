@@ -60,11 +60,15 @@ Each item should link to the actual product, be it a google spreadsheet, google 
 
 ## Task Allocation
 
-Member 1 - main tasking
+Wanyea Barbel - Set up developing environment, create hello world app
 
-Member 2 - main tasking
+Mitchell Wise - Set up developing environment, create hello world app
 
-In this section, each group member needs to provide a brief description of what they worked on during the sprint. Keep this short and to the point. Your trello board and commit history will provide the details. 
+Will Hall - Set up developing environment, create hello world app
+
+Fabricio de Siqueira Battaglia - Set up developing environment, create hello world app
+
+Michael Tsang - Set up developing environment, create hello world app 
 
 # Sprint 2
 
@@ -82,8 +86,12 @@ In this section, each group member needs to provide a brief description of what 
 
 ## Task Allocation
 
-Member 1 - main tasking
+Wanyea Barbel - Create low-level UML diagrams
 
-Member 2 - main tasking
+Mitchell Wise - Create system design documents
 
-**note**: For this sprint, I am anticipating that you will continue to work on the stories carried over from Sprint 1, with a focus on the design aspect of your system. I am expecting your architecture document and diagrams to reflect the system only in the context of these user stories, with some generalization to help plan for the other items currently in the backlog. I am not expecting a significant amount of implementation at this point, if any at all.
+Will Hall - Create UI mock-up and diagrams
+
+Fabricio de Siqueira Battaglia - Create high-level diagrams
+
+Michael Tsang - Create database diagrams 
