@@ -74,7 +74,7 @@ Michael Tsang - Set up developing environment, create hello world app
 - [Sprint Backlog](https://trello.com/b/o27NsHIz/moment-of-muscle) 
 - [Requirements](https://trello.com/b/o27NsHIz/moment-of-muscle)
 - [Trello Board](https://trello.com/b/o27NsHIz/moment-of-muscle)
-- [Burndown Chart](https://cdn.discordapp.com/attachments/804845091570319380/810544736912801852/unknown.png) 
+- [Burndown Chart](https://cdn.discordapp.com/attachments/804845091570319380/811677630503583774/unknown.png) 
 - [Velocity Chart](https://cdn.discordapp.com/attachments/804845091570319380/810544615131578372/unknown.png)
 - [System Architecture-GitHub](https://github.com/FabricioBattaglia/Moment-of-Muscle/blob/master/artifacts/architecture.md)
 - [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
