@@ -12,13 +12,13 @@ offer. If you have a skill, free time, and the will to work, Moment of Muscle (M
 you. If you need something done for a fair price while supporting local workers consider
 downloading Moment of Muscle.
 
-Moment of Muscle (MOM) solves big and small problems in people's everyday life.
+MOM solves big and small problems in people's everyday life.
 Whether it’s babysitting kids/pets, landscaping, computer repair, car wash or
 someone strong to help move your furniture, or any task people are willing to
 offer. Moment of Muscle is a one stop shop for busy individuals as well as people
 needing help with specific tasks/jobs.
 
-The main advantages of Moment of Muscle (MOM) include cheaper prices for jobs/tasks, saving gas
+The main advantages of MOM include cheaper prices for jobs/tasks, saving gas
 money by not having to drive somewhere to do a task. having someone local that
 you trust complete your job/task. Moment of Muscle also is proud to give more
 money to the worker, while keeping a competitive price.
@@ -27,7 +27,7 @@ Unlike Fiverr we focus on communities. We want to connect people who can do a
 task with people who need things done. Moment of Muscle (MOM) offers a way
 other than depending on the already established big players in the market, giving
 a chance to regular people to earn their money for a fair price, without
-interference. Moment of Muscle (MOM) provides quick access to people who are able to assist with certain situations within a
+interference. MOM provides quick access to people who are able to assist with certain situations within a
 certain range, at a cheaper price.
 
 ## Team Members
