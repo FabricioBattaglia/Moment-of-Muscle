@@ -64,7 +64,7 @@ See Code Complete, Chapter 3
 Business rules and decisions will be decided by the 5 developers working on Moment of Muscle (MOM). We will adhere to Dr. Hollanders software development guidelines.
 
 # User Interface Design
-[Here is a link to some user interface mockups](https://cdn.discordapp.com/attachments/804845091570319380/810342429139402752/Diagram.jpg)
+![Here is a link to some user interface mockups](/images/Diagram.jpg)
 
 For the screen on the left, the general purpose of this is to provide an entry gate for users to log into the app and thus be identified under a general profile containing their information as a user. Users will type an appropriate username and its accompanying password in order to log in, or click either the reset password button if they have forgot their information, or the “create account” app if they have never logged in with the application before. This relates to the user story “As a user, I want to log in, so that I am able to use the app”, as this screen directly allows them to complete this task.
 
