@@ -72,7 +72,9 @@ For the screen in the middle, the general purpose of this is to allow users to s
 
 Finally, for the screen on the right, the general purpose of this is to allow users to rate the general performance of others once a job is completed. As a worker, you are rating the general performance of the one who hired you in terms of cooperation and helpful feedback, and as someone who hired a worker, you are rating them on task completion and general performance in completing your desired goal. This relates to the user story “As a user, I want to rate other users so that good users are better seen by other users”, as these ratings will be added to the respective person’s profile pages, so that they can be reviewed by others using the application.
 
-Outside of these three specific pages though, our user interface diagram provides additional details as to how every page of the application is related, and what buttons and functions link between certain pages. This diagram can be seen [here](https://cdn.discordapp.com/attachments/804845091570319380/810343103318720522/UI_Diagram.png), and more concisely describes the relationships between all of our individual pages. The above three screens were arguably the most important ones of the application though, which is why they were chosen to be featured.
+Outside of these three specific pages though, our user interface diagram provides additional details as to how every page of the application is related, and what buttons and functions link between certain pages. This diagram can be seen bellow, and more concisely describes the relationships between all of our individual pages. The above three screens were arguably the most important ones of the application though, which is why they were chosen to be featured.
+
+![here](/images/UI%20Diagram.png)
 
 # Resource Management 
 The Moment of Muscle application manages their own resources at the moment and is being developed on Android Studio.
