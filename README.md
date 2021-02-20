@@ -92,4 +92,4 @@ Will Hall - Create UI mock-up and diagrams
 
 Fabricio de Siqueira Battaglia - Create high-level diagrams
 
-Michael Tsang - Create database diagrams 
+Michael Tsang - Create database diagrams   
