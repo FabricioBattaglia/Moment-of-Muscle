@@ -27,7 +27,7 @@ Unlike Fiverr we focus on communities. We want to connect people who can do a
 task with people who need things done. Moment of Muscle (MOM) offers a way
 other than depending on the already established big players in the market, giving
 a chance to regular people to earn their money for a fair price, without
-interference. MOM provides quick access to people who are able to assist with certain situations within a
+interference. Moment of Muscle (MOM) provides quick access to people who are able to assist with certain situations within a
 certain range, at a cheaper price.
 
 ## Team Members
