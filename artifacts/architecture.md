@@ -3,16 +3,19 @@
 ## System Context Diagram
 
 ![System Context Diagram](/images/SystemContextDiagram.png) 
+
 A simple System Context Diagram, showing the interactions of the Software System
 
 ## Container Diagram
 
 ![Container Diagram](/images/ContainerDiagram.png) 
+
 A zoom into the Moment of Muscle system, showing how it will use a mobile app and how it will comunicate with the database
 
 ## Component Diagram
 
 ![Component Diagram](/images/ComponentDiagram.png) 
+
 The structural blocks of the mobile app, showing the functions the app will have and their link to the database
 
 ## User stories - Blocks relationship
