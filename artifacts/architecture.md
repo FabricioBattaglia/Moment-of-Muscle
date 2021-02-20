@@ -57,7 +57,6 @@ This activity diagram includes a subclass of createNewUser and isUserSignedIn an
 ![Data Activity Diagram](/images/MomentofMuscleDatabase.JPG)
 The following entities within this diagram are the ‘user’, job, ‘location’, and ‘account’. The moment of muscle app is a community-base app, as it allows others to come help people who are in need of assistance with jobs that they are unable to do. The ‘account’ entity has the attributes of the point system, and a job list. This one entity has a relationship with three separate entities, with location being important as users will have to know where they are. The Job entity is also important as jobs are the main feature of the app, with it’s traits being the required experience for the job and the name of it. The final entity is the User entity with the simple traits of a username, id-code and the password. 
 
-See Code Complete, Chapter 3
 
 # Business Rules
 
@@ -80,10 +79,10 @@ Outside of these three specific pages though, our user interface diagram provide
 The Moment of Muscle application manages their own resources at the moment and is being developed on Android Studio.
 
 # Security 
-We will be storing data in a MySQL database. We will use standard data encryption practices when dealing with accounts/user information. Users will be able to recover their username/password if lost/stolen.
+Currently, security is not a concern as it is outside of our scope. However, we will be storing data in a MySQL database. We will consider standard data encryption practices when dealing with accounts/user information. Users will be able to recover their username/password if lost/stolen.
 
 # Performance 
-Our performance goals are for the application to be lightweight and have short and direct features, which are meaningful and easy for users to use. This will save a lot on the overhead of the project and result in a quick application.
+Performance is not a concern as it is outside of our scope. Currently, we are trying to create a basic functional Android application and performance is not a focus point at the moment as the developers are the only users. Additionally, we are only using test data and thus the need to optimize performance is unnecessary. 
 
 # Scalability 
 We plan to make Moment of Muscle available on the Android app store for users to download. We have a clear and defined plan for our architecture to meet future demand. When hitting a certain number of users we plan to get more servers and continually test our application to make sure that our database records are fast/accurate. Moment of Muscle is positioning itself to be able to accept large quantities of users. Our 5 developers are the only ones with access to Moment of Muscle at the moment, so scaling is not currently an issue in our development phase. 
@@ -133,11 +132,11 @@ We do not have any concerns with Moment of Muscles architectural feasibility. At
 Moment of Muscle is being designed keeping in mind KISS (Keep it simple, stupid), doing only the necessary code for the fundamental parts of the code.
 
 # Build-vs-Buy Decisions 
-Our database will use MySQL and will interact with the System software using the JTDS Library. The development environment for Moment of Muscle (MOM) will be done on Android Studio, which is a free open source application.
+Our database will use MySQL and will interact with the System software using the JTDS Library. Additionally, we are utilizing the Firebase framework to handle user accounts on the application. The development environment for Moment of Muscle (MOM) will be done on Android Studio, which is a free open source application.
 
 # Reuse
 We will test all pre existing software, test cases, data formats and other materials before releasing anything. Making sure first and foremost that the reused software aligns to our architecture goals.
 
 # Change Strategy
-Because building a software product is a learning process for both the programmers and the users, the product is likely to change throughout its development. 
+Because building a software product is a learning process for both the programmers and the users, the product is likely to change throughout its development. Results from testing phases will also contribute to how we change the direction and scope of the application in the coming weeks.
 
