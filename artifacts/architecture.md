@@ -52,9 +52,9 @@ This activity diagram includes a subclass of createNewUser and isUserSignedIn an
 ## Relating to User Stories
 ![Relating to User Stories](/images/classuserstory.jpg)
 
-# Data Design
+## Data Design
 
-[Data Activity Diagram](https://cdn.discordapp.com/attachments/804845091570319380/810274680267210822/unknown.png)
+![Data Activity Diagram](/images/MomentofMuscleDatabase.JPG)
 The following entities within this diagram are the ‘user’, job, ‘location’, and ‘account’. The moment of muscle app is a community-base app, as it allows others to come help people who are in need of assistance with jobs that they are unable to do. The ‘account’ entity has the attributes of the point system, and a job list. This one entity has a relationship with three separate entities, with location being important as users will have to know where they are. The Job entity is also important as jobs are the main feature of the app, with it’s traits being the required experience for the job and the name of it. The final entity is the User entity with the simple traits of a username, id-code and the password. 
 
 See Code Complete, Chapter 3
