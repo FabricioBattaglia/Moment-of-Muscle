@@ -12,7 +12,7 @@ offer. If you have a skill, free time, and the will to work, Moment of Muscle (M
 you. If you need something done for a fair price while supporting local workers consider
 downloading Moment of Muscle.
 
-MOM solves big and small problems in people's everyday life.
+Moment of Muscle solves big and small problems in people's everyday life.
 Whether it’s babysitting kids/pets, landscaping, computer repair, car wash or
 someone strong to help move your furniture, or any task people are willing to
 offer. Moment of Muscle is a one stop shop for busy individuals as well as people
@@ -24,7 +24,7 @@ you trust complete your job/task. Moment of Muscle also is proud to give more
 money to the worker, while keeping a competitive price.
 
 Unlike Fiverr we focus on communities. We want to connect people who can do a
-task with people who need things done. Moment of Muscle (MOM) offers a way
+task with people who need things done. Moment of Muscle offers a way
 other than depending on the already established big players in the market, giving
 a chance to regular people to earn their money for a fair price, without
 interference. MOM provides quick access to people who are able to assist with certain situations within a
