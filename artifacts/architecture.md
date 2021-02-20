@@ -21,6 +21,7 @@ The structural blocks of the mobile app, showing the functions the app will have
 ## User stories - Blocks relationship
 
 ![User stories - Blocks relationship](/images/User-Block-Relation.png) 
+
 A table with lines connecting which block solves each user stories.
 
 # Code Design
