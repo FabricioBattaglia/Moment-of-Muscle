@@ -14,22 +14,31 @@ A table with lines connecting which block solves each user stories.
 
 # Code Design
 
-[Class Diagram](https://cdn.discordapp.com/attachments/804845091570319380/810267117931987025/UMLClassDiagram.jpg)
+## Class Diagram
+
+![Class Diagram](/images/UMLClassDiagram.jpg)
+
 Class Diagram that includes the required objects for a basic login system, job posting and accepting system. The User object includes the name, bio and rating of the client and calls the methods isUserSignedIn, createNewUsers and resetPassword as needed on the login screen. A Worker and Hiring Manager object inherit the User object but also include the field currentJobs/currentWorkers and the methods searchForWork/postNewJob respectively. 
 
-[UML Sequence Diagram](https://cdn.discordapp.com/attachments/804845091570319380/810220594817662976/UMLSequenceDiagram.jpg)
+## UML Sequence Diagram
+![UML Sequence Diagram](/images/UMLSequenceDiagram.jpg)
+
 The UML Sequence Diagram provides a visual presentation of the interactions that are taking place within our system. The diagram includes three objects included in the diagram (client, login UI, SQL database) and displays the process of search for preexisting jobs and accepting. The diagram also details what happens if specific conditions aren’t met. All three of these objects are included in the diagram because they are all needed to complete a job request transaction. 
 
-[Activity Diagram #1 (isUserSignedIn)](https://cdn.discordapp.com/attachments/804845091570319380/810220615897710602/isUserSignedIn.jpg)
+## Activity Diagram #1 (isUserSignedIn)
+![Activity Diagram #1 (isUserSignedIn)](/images/isUserSignedIn.jpg)
 This activity diagram details the pipeline for handling the user login process. This class includes calls to subclasses createNewUsers and resetPassword under specific conditions. At the end of this class, a user should be able to successfully login and prepare to take job offerings. 
 
-[Activity Diagram #2 (createNewUser)](https://cdn.discordapp.com/attachments/804845091570319380/810220632527863879/createNewUser.jpg)
+## Activity Diagram #2 (createNewUser)
+![Activity Diagram #2 (createNewUser)](/images/createNewUser.jpg)
 This activity diagram includes a subclass of isUserSignedIn and requests sufficient information from the user to create a new account. This class also handles the case where a user tries to create a new account with credentials that belong to another user.
 
-[Activity Diagram #3 (resetPassword)](https://cdn.discordapp.com/attachments/804845091570319380/810220646901743676/resetPassword.jpg)
+## Activity Diagram #3 (resetPassword)
+![Activity Diagram #3 (resetPassword)](/images/resetPassword.jpg)
 This activity diagram includes a subclass of createNewUser and isUserSignedIn and handles the resetting of a users password. 
 
-[Relating to User Stories](https://cdn.discordapp.com/attachments/804845091570319380/810275104147505182/classuserstory.jpg)
+## Relating to User Stories
+![Relating to User Stories](/images/classuserstory.jpg)
 
 # Data Design
 
