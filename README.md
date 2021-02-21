@@ -73,8 +73,6 @@ Michael Tsang - Set up developing environment, create hello world app
 - [Velocity Chart](https://cdn.discordapp.com/attachments/804845091570319380/810544615131578372/unknown.png)
 - [System Architecture-GitHub](https://github.com/FabricioBattaglia/Moment-of-Muscle/blob/master/artifacts/architecture.md)
 - [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
-- Source Code
-- Automated Tests
 - [Product Demonstration](https://youtu.be/Eqv-bqsj9H8) 
 
 ## Task Allocation
@@ -88,3 +86,27 @@ Will Hall - Create UI mock-up and diagrams
 Fabricio de Siqueira Battaglia - Create high-level diagrams
 
 Michael Tsang - Create database diagrams   
+
+# Sprint 3
+
+- [Product Backlog](https://trello.com/b/o27NsHIz/moment-of-muscle)
+- [Sprint Backlog](https://trello.com/b/o27NsHIz/moment-of-muscle) 
+- [Requirements](https://trello.com/b/o27NsHIz/moment-of-muscle)
+- [Trello Board](https://trello.com/b/o27NsHIz/moment-of-muscle)
+- [Burndown Chart](https://cdn.discordapp.com/attachments/804845091570319380/813144956519579688/unknown.png) 
+- [Velocity Chart](https://cdn.discordapp.com/attachments/804845091570319380/810544615131578372/unknown.png)
+- [System Architecture-GitHub](https://github.com/FabricioBattaglia/Moment-of-Muscle/blob/master/artifacts/architecture.md)
+- [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
+- Source Code
+- Automated Tests
+- [Product Demonstration](https://youtu.be/Eqv-bqsj9H8) 
+
+## Task Allocation
+
+Mitchell Wise - Create base Log-in screen for the application
+
+Will Hall - Create App Icon and learn UI design for Android Studio
+
+Fabricio de Siqueira Battaglia -  Create profile page for the application
+
+Michael Tsang & Wanyea Barbel - Work on job viewing screens for the application
