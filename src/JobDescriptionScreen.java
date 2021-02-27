@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import android.os.Bundle;
+
 public class JobDescriptionScreen extends AppCompatActivity {
 
     @Override

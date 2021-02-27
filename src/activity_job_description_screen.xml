@@ -6,12 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".JobDescriptionScreen">
 
-
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/aclonica"
         android:text="Job Board"
         android:textColor="#2196F3"
         android:textSize="32sp"
@@ -32,7 +30,6 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:ems="10"
-        android:fontFamily="@font/aclonica"
         android:hint="Enter Job Title"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,7 +48,6 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:fontFamily="@font/aclonica"
         android:text="Add Job"
         app:backgroundTint="#2196F3"
         app:layout_constraintBottom_toBottomOf="parent"
