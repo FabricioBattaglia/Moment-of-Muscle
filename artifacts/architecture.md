@@ -8,7 +8,7 @@ A simple System Context Diagram, showing the interactions of the Software System
 
 ## Container Diagram
 
-![Container Diagram](/images/ContainerDiagram.png) 
+![Container Diagram](/images/UpdatedContainerDiagram.png) 
 
 A zoom into the Moment of Muscle system, showing how it will use a mobile app and how it will comunicate with the database
 
