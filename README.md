@@ -125,7 +125,7 @@ Michael Tsang & Wanyea Barbel - Work on job viewing screens for the application
 - [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
 - Source Code (Check src file in repo)
 - Automated Tests
-- [Product Demonstration](https://www.youtube.com/watch?v=W_fyb-GqRwU&ab_channel=MomentofMuscle) 
+- [Product Demonstration](https://www.youtube.com/watch?v=nIu14ISBOws&ab_channel=MomentofMuscle) 
 
 ## Task Allocation
 
