@@ -135,6 +135,6 @@ Mitchell Wise - Work on returning data from the database to the user and be able
 
 Will Hall - Prepare UI templates for later use, reorganize charts
 
-Fabricio de Siqueira Battaglia -  Create profile page for the application
+Fabricio de Siqueira Battaglia -  Integrate firebase database with the application, allowing registration, login, and logout
 
 Michael Tsang & Wanyea Barbel - Work on job viewing screens for the application
