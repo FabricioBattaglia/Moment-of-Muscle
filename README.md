@@ -103,6 +103,8 @@ Michael Tsang - Create database diagrams
 
 ## Task Allocation
 
+Wanyea Barbel - As a user, I would like to view the job posting board so that I am able to work on jobs
+
 Mitchell Wise - Create base Log-in screen for the application
 
 Will Hall - Create App Icon and learn UI design for Android Studio
@@ -126,6 +128,8 @@ Michael Tsang & Wanyea Barbel - Work on job viewing screens for the application
 - [Product Demonstration](https://www.youtube.com/watch?v=W_fyb-GqRwU&ab_channel=MomentofMuscle) 
 
 ## Task Allocation
+
+Wanyea Barbel - As a user, I want to be able to reset my password, so that I can keep my account secure
 
 Mitchell Wise - Work on returning data from the database to the user and be able to add, edit and delete that data
 
