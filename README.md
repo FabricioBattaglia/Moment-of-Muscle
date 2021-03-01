@@ -127,7 +127,7 @@ Michael Tsang & Wanyea Barbel - Work on job viewing screens for the application
 
 ## Task Allocation
 
-Mitchell Wise - Create base Log-in screen for the application
+Mitchell Wise - Work on returning data from the database to the user and be able to add, edit and delete that data
 
 Will Hall - Prepare UI templates for later use, reorganize charts
 
