@@ -63,11 +63,25 @@ The following entities within this diagram are the ‘user’, job, ‘location�
 Business rules and decisions will be decided by the 5 developers working on Moment of Muscle (MOM). We will adhere to Dr. Hollanders software development guidelines.
 
 # User Interface Design
-![here](/images/job_board.JPG)
-![here](/images/login.JPG)
-![here](/images/profile.JPG)
+
+## Account Creation Screen 
+
 ![here](/images/register.JPG)
+
+## Login Screen Design 
+
+![here](/images/login.JPG)
+
+## Home Screen Design 
+
 ![here](/images/home.JPG)
+
+## Profile Screen Design 
+
+![here](/images/profile.JPG)
+
+## Job Board Screen
+![here](/images/job_board.JPG)
 
 For the screen on the top left, the general purpose of this is to provide an entry gate for users to log into the app and thus be identified under a general profile containing their information as a user. Users will type an appropriate email and its accompanying password in order to log in, or click either the “Forgot password” button if they have forgotten their information, or the “New here? Create account” app if they have never logged in with the application before. This relates to the user story “As a user, I want to log in, so that I am able to use the app”, as this screen directly allows them to complete this task.
 
