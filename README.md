@@ -123,7 +123,7 @@ Michael Tsang & Wanyea Barbel - Work on job viewing screens for the application
 - [Velocity Chart](https://cdn.discordapp.com/attachments/804845091570319380/815760737918124042/unknown.png)
 - [System Architecture-GitHub](https://github.com/FabricioBattaglia/Moment-of-Muscle/blob/master/artifacts/architecture.md)
 - [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
-- Source Code (Check src file in repo)
+- [Source Code](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src)
 - Automated Tests (Check src file in repo)
 - [Product Demonstration](https://www.youtube.com/watch?v=nIu14ISBOws&ab_channel=MomentofMuscle) 
 
@@ -138,3 +138,30 @@ Will Hall - Prepare UI templates for later use, reorganize charts
 Fabricio de Siqueira Battaglia -  Integrate firebase database with the application, allowing registration, login, and logout
 
 Michael Tsang - Wrote tests on login registration, and adding jobs to the job board.
+
+# Sprint 5
+
+- [Product Backlog](https://trello.com/b/o27NsHIz/moment-of-muscle)
+- [Sprint Backlog](https://trello.com/b/o27NsHIz/moment-of-muscle) 
+- [Requirements](https://trello.com/b/o27NsHIz/moment-of-muscle)
+- [Trello Board](https://trello.com/b/o27NsHIz/moment-of-muscle)
+- [Burndown Chart](https://cdn.discordapp.com/attachments/804845091570319380/815760804254187580/unknown.png) 
+- [Velocity Chart](https://cdn.discordapp.com/attachments/804845091570319380/815760737918124042/unknown.png)
+- [System Architecture-GitHub](https://github.com/FabricioBattaglia/Moment-of-Muscle/blob/master/artifacts/architecture.md)
+- [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
+- [Source Code](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src)
+- Automated Tests (Check src file in repo)
+- [Product Demonstration](https://www.youtube.com/watch?v=nIu14ISBOws&ab_channel=MomentofMuscle) 
+
+## Task Allocation
+
+Wanyea Barbel - As a user, I want to be able to add and view postings on the job board.
+
+Mitchell Wise - Work on returning data from the database to the user and be able to add, edit and delete that data
+
+Will Hall - Prepare UI templates for later use, reorganize charts
+
+Fabricio de Siqueira Battaglia -  Integrate firebase database with the application, allowing registration, login, and logout
+
+Michael Tsang - Wrote tests on login registration, and adding jobs to the job board.
+
