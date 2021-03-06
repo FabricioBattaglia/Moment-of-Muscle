@@ -86,7 +86,7 @@ Will Hall - Create UI mock-up and diagrams
 Fabricio de Siqueira Battaglia - Create high-level diagrams
 
 Michael Tsang - Create database diagrams   
-
+ 
 # Sprint 3
 
 - [Product Backlog](https://trello.com/b/o27NsHIz/moment-of-muscle)
