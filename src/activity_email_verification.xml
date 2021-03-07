@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmailVerification">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="297dp"
+        android:layout_height="217dp"
+        android:text="Your e-mail is not verified, please verify your e-mail
+        or send another verification e-mail before you can use the app"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <Button
+        android:id="@+id/verificationBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="375dp"
+        android:text="send verification code"
+        app:backgroundTint="#4588ED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <Button
+        android:id="@+id/alreadyVerified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="375dp"
+        android:text="Already verified? Click here"
+        app:backgroundTint="#4588ED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verificationBtn"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <Button
+        android:id="@+id/eLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="375dp"
+        android:text="Logout"
+        app:backgroundTint="#E42B2B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alreadyVerified"
+        app:layout_constraintVertical_bias="0.039" />
+</androidx.constraintlayout.widget.ConstraintLayout>
