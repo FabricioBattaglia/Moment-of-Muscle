@@ -160,5 +160,5 @@ Will Hall - Prepare UI templates for later use, reorganize charts
 
 Fabricio de Siqueira Battaglia -  Integrate firebase database with the application, allowing registration, login, and logout
 
-Michael Tsang - Wrote tests on login registration, and adding jobs to the job board.
+Michael Tsang - Wrote test cases on editProfile class, ResetPassword Class and Email Verification Class. 
 
