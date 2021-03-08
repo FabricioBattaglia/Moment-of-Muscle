@@ -11,7 +11,7 @@
         android:layout_width="297dp"
         android:layout_height="217dp"
         android:text="Your e-mail is not verified, please verify your e-mail
-        or send another verification e-mail before you can use the app"
+        or send another verification e-mail before you can use the app, then log in again"
         android:textAlignment="center"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -46,16 +46,4 @@
         app:layout_constraintTop_toBottomOf="@+id/verificationBtn"
         app:layout_constraintVertical_bias="0.037" />
 
-    <Button
-        android:id="@+id/eLogout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="375dp"
-        android:text="Logout"
-        app:backgroundTint="#E42B2B"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/alreadyVerified"
-        app:layout_constraintVertical_bias="0.039" />
 </androidx.constraintlayout.widget.ConstraintLayout>
