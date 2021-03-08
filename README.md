@@ -131,7 +131,7 @@ Michael Tsang & Wanyea Barbel - Work on job viewing screens for the application
 
 Wanyea Barbel - As a user, I want to be able to reset my password, so that I can keep my account secure
 
-Mitchell Wise - Work on returning data from the database to the user and be able to add, edit and delete that data
+Mitchell Wise - Push and Pull user data to/from the database (Firestore)
 
 Will Hall - Prepare UI templates for later use, reorganize charts
 
@@ -157,7 +157,7 @@ Michael Tsang - Wrote tests on login registration, and adding jobs to the job bo
 
 Wanyea Barbel - As a user, I want to be able to add and view postings on the job board.
 
-Mitchell Wise - Push and Pull user data to the database (Firestore)
+Mitchell Wise - Push and Pull user data to/from the database (Firestore) -> carried over WORKING task from last week and completed this week
 
 Will Hall - Prepare UI templates for later use, reorganize charts
 
