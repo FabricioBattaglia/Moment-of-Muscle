@@ -158,7 +158,7 @@ Mitchell Wise - Push and Pull user data to/from the database (Firestore) -> carr
 
 Will Hall - Coded updated UIs for several app screens
 
-Fabricio de Siqueira Battaglia -  Added actual email authentication to the sign up/log in process
+Fabricio de Siqueira Battaglia -  Added email authentication to the sign up/log in process
 
 Michael Tsang - Wrote test cases on editProfile class, ResetPassword Class and Email Verification Class. 
 
