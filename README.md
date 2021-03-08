@@ -97,8 +97,8 @@ Michael Tsang - Create database diagrams
 - [Velocity Chart](https://cdn.discordapp.com/attachments/804845091570319380/813147314406948935/unknown.png)
 - [System Architecture-GitHub](https://github.com/FabricioBattaglia/Moment-of-Muscle/blob/master/artifacts/architecture.md)
 - [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
-- Source Code (Check src file in repo)
-- Automated Tests
+- [Source Code](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src)
+- [Automated Tests](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src/tests)
 - [Product Demonstration](https://www.youtube.com/watch?v=W_fyb-GqRwU&ab_channel=MomentofMuscle) 
 
 ## Task Allocation
@@ -124,7 +124,7 @@ Michael Tsang & Wanyea Barbel - Work on job viewing screens for the application
 - [System Architecture-GitHub](https://github.com/FabricioBattaglia/Moment-of-Muscle/blob/master/artifacts/architecture.md)
 - [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
 - [Source Code](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src)
-- Automated Tests (Check src file in repo)
+- [Automated Tests](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src/tests)
 - [Product Demonstration](https://www.youtube.com/watch?v=nIu14ISBOws&ab_channel=MomentofMuscle) 
 
 ## Task Allocation
@@ -150,7 +150,7 @@ Michael Tsang - Wrote tests on login registration, and adding jobs to the job bo
 - [System Architecture-GitHub](https://github.com/FabricioBattaglia/Moment-of-Muscle/blob/master/artifacts/architecture.md)
 - [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
 - [Source Code](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src)
-- Automated Tests (Check src file in repo)
+- [Automated Tests](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src/tests)
 - [Product Demonstration](https://www.youtube.com/watch?v=nIu14ISBOws&ab_channel=MomentofMuscle) 
 
 ## Task Allocation
