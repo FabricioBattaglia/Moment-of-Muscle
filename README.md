@@ -141,9 +141,6 @@ Michael Tsang - Wrote tests on login registration, and adding jobs to the job bo
 
 # Sprint 5
 
-- [Product Backlog](https://trello.com/b/o27NsHIz/moment-of-muscle)
-- [Sprint Backlog](https://trello.com/b/o27NsHIz/moment-of-muscle) 
-- [Requirements](https://trello.com/b/o27NsHIz/moment-of-muscle)
 - [Trello Board](https://trello.com/b/o27NsHIz/moment-of-muscle)
 - [Burndown Chart](https://cdn.discordapp.com/attachments/804845091570319380/815760804254187580/unknown.png) 
 - [Velocity Chart](https://cdn.discordapp.com/attachments/804845091570319380/815760737918124042/unknown.png)
