@@ -142,8 +142,8 @@ Michael Tsang - Wrote tests on login registration, and adding jobs to the job bo
 # Sprint 5
 
 - [Trello Board](https://trello.com/b/o27NsHIz/moment-of-muscle)
-- [Burndown Chart](https://cdn.discordapp.com/attachments/804845091570319380/815760804254187580/unknown.png) 
-- [Velocity Chart](https://cdn.discordapp.com/attachments/804845091570319380/815760737918124042/unknown.png)
+- [Burndown Chart](https://cdn.discordapp.com/attachments/804845091570319380/818345346992177172/unknown.png) 
+- [Velocity Chart](https://cdn.discordapp.com/attachments/804845091570319380/818345589238136872/unknown.png)
 - [System Architecture-GitHub](https://github.com/FabricioBattaglia/Moment-of-Muscle/blob/master/artifacts/architecture.md)
 - [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
 - [Source Code](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src)
@@ -156,9 +156,9 @@ Wanyea Barbel - As a user, I want to be able to add and view postings on the job
 
 Mitchell Wise - Push and Pull user data to/from the database (Firestore) -> carried over WORKING task from last week and completed this week
 
-Will Hall - Prepare UI templates for later use, reorganize charts
+Will Hall - Coded updated UIs for several app screens
 
-Fabricio de Siqueira Battaglia -  Integrate firebase database with the application, allowing registration, login, and logout
+Fabricio de Siqueira Battaglia -  Added actual email authentication to the sign up/log in process
 
 Michael Tsang - Wrote test cases on editProfile class, ResetPassword Class and Email Verification Class. 
 
