@@ -154,7 +154,7 @@ Michael Tsang - Wrote tests on login registration, and adding jobs to the job bo
 
 Wanyea Barbel - As a user, I want to be able to add and view postings on the job board.
 
-Mitchell Wise - Push and Pull user data to/from the database (Firestore). Carried over WORKING task from last week and completed this week
+Mitchell Wise - Push and Pull user data to/from the database (Firestore). Carried over task from last week and completed this week.
 
 Will Hall - Coded updated UIs for several app screens
 
