@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/gray"
     tools:context=".EmailVerification">
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="297dp"
         android:layout_height="217dp"
-        android:text="Your e-mail is not verified, please verify your e-mail
-        or send another verification e-mail before you can use the app, then log in again"
+        android:text="Your e-mail is not verified. Please verify your e-mail
+        or send another verification e-mail before you can use the app, then log in again."
         android:textAlignment="center"
+        android:textColor="#ffffff"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +28,8 @@
         android:layout_height="wrap_content"
         android:width="375dp"
         android:text="send verification code"
-        app:backgroundTint="#4588ED"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/lime"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +42,8 @@
         android:layout_height="wrap_content"
         android:width="375dp"
         android:text="Already verified? Click here"
-        app:backgroundTint="#4588ED"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/lime"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
