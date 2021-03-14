@@ -177,7 +177,7 @@ Michael Tsang - Wrote test cases on editProfile class, ResetPassword Class and E
 
 Wanyea Barbel - As a user, I want to be able to add and view postings on the job board.
 
-Mitchell Wise - Setup Firestore, so users can see other users data. (WORKING)
+Mitchell Wise - Setup Firestore, so users can see other users data. (Working)
 
 Will Hall - Coded updated UIs for several app screens
 
