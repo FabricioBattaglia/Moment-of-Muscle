@@ -165,8 +165,8 @@ Michael Tsang - Wrote test cases on editProfile class, ResetPassword Class and E
 # Sprint 6
 
 - [Trello Board](https://trello.com/b/o27NsHIz/moment-of-muscle)
-- [Burndown Chart](https://cdn.discordapp.com/attachments/804845091570319380/818345346992177172/unknown.png) 
-- [Velocity Chart](https://cdn.discordapp.com/attachments/804845091570319380/818345589238136872/unknown.png)
+- [Burndown Chart](https://cdn.discordapp.com/attachments/804845091570319380/820815568419684392/unknown.png) 
+- [Velocity Chart](https://cdn.discordapp.com/attachments/804845091570319380/820815650343485440/unknown.png)
 - [System Architecture-GitHub](https://github.com/FabricioBattaglia/Moment-of-Muscle/blob/master/artifacts/architecture.md)
 - [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
 - [Source Code](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src)
@@ -179,7 +179,7 @@ Wanyea Barbel - As a user, I want to be able to add and view postings on the job
 
 Mitchell Wise - Setup Firestore, so users can see other users data. (Working)
 
-Will Hall - Coded updated UIs for several app screens
+Will Hall - Reorganized all xml files in newer format and updated all UI elements
 
 Fabricio de Siqueira Battaglia -  Added email authentication to the sign up/log in process
 
