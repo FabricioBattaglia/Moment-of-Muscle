@@ -171,18 +171,18 @@ Michael Tsang - Wrote test cases on editProfile class, ResetPassword Class and E
 - [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
 - [Source Code](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src)
 - [Automated Tests](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src/tests)
-- [Product Demonstration](https://www.youtube.com/watch?v=PnMWgVbUSVQ&ab_channel=MomentofMuscle) 
+- [Product Demonstration](https://youtu.be/C28afdI7ljM) 
 
 ## Task Allocation
 
-Wanyea Barbel - Send user's job to Firebase to be pulled from for job board
+Wanyea Barbel - Send user's job to Firebase to be pulled from for job board.
 
-Mitchell Wise - Setup Firestore, so users can see other users data. (Working)
+Mitchell Wise - Setup Firestore, so users can see other users data. (Working).
 
-Will Hall - Reorganized all xml files in newer format and updated all UI elements
+Will Hall - Reorganized all xml files in newer format and updated all UI elements.
 
-Fabricio de Siqueira Battaglia -  Added email authentication to the sign up/log in process
+Fabricio de Siqueira Battaglia -  Added firestore functionality to edit profile and Implemented job board retrieval from firestore.
 
-Michael Tsang - Wrote test cases on editProfile class, ResetPassword Class and Email Verification Class. 
+Michael Tsang - Updated test cases on edit profile to check firebase functionality. 
 
 
