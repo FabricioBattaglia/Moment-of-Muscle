@@ -175,7 +175,7 @@ Michael Tsang - Wrote test cases on editProfile class, ResetPassword Class and E
 
 ## Task Allocation
 
-Wanyea Barbel - As a user, I want to be able to add and view postings on the job board.
+Wanyea Barbel - Send user's job to Firebase to be pulled from for job board
 
 Mitchell Wise - Setup Firestore, so users can see other users data. (Working)
 
