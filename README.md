@@ -204,7 +204,7 @@ Mitchell Wise - Setup Firestore, so users can see other users data. (Complete).
 
 Will Hall - Organized final templates for project w/ extra xml files (Pending submission)
 
-Fabricio de Siqueira Battaglia -  Added firestore functionality to edit profile and Implemented job board retrieval from firestore.
+Fabricio de Siqueira Battaglia -  Added profile picture functionality to profile page.
 
 Michael Tsang - Updated test cases on edit profile to check firebase functionality. 
 
