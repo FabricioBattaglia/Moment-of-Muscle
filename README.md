@@ -200,7 +200,7 @@ Michael Tsang - Updated test cases on edit profile to check firebase functionali
 
 Wanyea Barbel - As a user, I want to view jobs on the job board so that I am able to accept jobs.
 
-Mitchell Wise - Setup Firestore, so users can see other users data. (Working).
+Mitchell Wise - Setup Firestore, so users can see other users data. (Complete).
 
 Will Hall - Organized final templates for project w/ extra xml files (Pending submission)
 
