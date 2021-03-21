@@ -1,4 +1,4 @@
-package com.example.mom;
+package com.example.profilescreen;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -77,9 +77,13 @@ public class SecondActivity extends AppCompatActivity {
                 fAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
+                        if(task.isSuccessful() && fAuth.getCurrentUser().isEmailVerified()){
                             Toast.makeText(SecondActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(), HomeScreen.class));
+                        }
+                        else if(task.isSuccessful() && fAuth.getCurrentUser().isEmailVerified() == false){
+                            Toast.makeText(SecondActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(), EmailVerification.class));
                         }
                         else{
 

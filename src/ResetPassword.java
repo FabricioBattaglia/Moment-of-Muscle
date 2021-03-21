@@ -1,4 +1,4 @@
-package com.example.mom;
+package com.example.profilescreen;
 
 import androidx.appcompat.app.AppCompatActivity;
 

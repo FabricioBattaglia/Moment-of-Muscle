@@ -6,12 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".JobDescriptionScreen">
 
+
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Job Board"
+        android:layout_marginTop="16dp"
+        android:text="Add New Job"
         android:textColor="#2196F3"
         android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,7 +20,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/JobPostingEntry"
@@ -74,9 +75,13 @@
 
     <Spinner
         android:id="@+id/JobTypeSpinner"
-        android:layout_width="356dp"
+        android:layout_width="match_parent"
         android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:backgroundTint="#2196F3"
         android:hint="Choose job type"
         android:textSize='24sp'
@@ -89,9 +94,13 @@
 
     <Spinner
         android:id="@+id/JobRadiusSpinner"
-        android:layout_width="356dp"
+        android:layout_width="match_parent"
         android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:backgroundTint="#2196F3"
         android:hint="Choose job radius"
         android:textSize='24sp'
@@ -101,5 +110,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/JobTypeSpinner"
         app:layout_constraintVertical_bias="0.002" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -97,8 +97,8 @@ Michael Tsang - Create database diagrams
 - [Velocity Chart](https://cdn.discordapp.com/attachments/804845091570319380/813147314406948935/unknown.png)
 - [System Architecture-GitHub](https://github.com/FabricioBattaglia/Moment-of-Muscle/blob/master/artifacts/architecture.md)
 - [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
-- Source Code (Check src file in repo)
-- Automated Tests
+- [Source Code](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src)
+- [Automated Tests](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src/tests)
 - [Product Demonstration](https://www.youtube.com/watch?v=W_fyb-GqRwU&ab_channel=MomentofMuscle) 
 
 ## Task Allocation
@@ -124,14 +124,14 @@ Michael Tsang & Wanyea Barbel - Work on job viewing screens for the application
 - [System Architecture-GitHub](https://github.com/FabricioBattaglia/Moment-of-Muscle/blob/master/artifacts/architecture.md)
 - [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
 - [Source Code](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src)
-- Automated Tests (Check src file in repo)
+- [Automated Tests](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src/tests)
 - [Product Demonstration](https://www.youtube.com/watch?v=nIu14ISBOws&ab_channel=MomentofMuscle) 
 
 ## Task Allocation
 
 Wanyea Barbel - As a user, I want to be able to reset my password, so that I can keep my account secure
 
-Mitchell Wise - Work on returning data from the database to the user and be able to add, edit and delete that data
+Mitchell Wise - Push and Pull user data to/from the database (Firestore)
 
 Will Hall - Prepare UI templates for later use, reorganize charts
 
@@ -141,27 +141,71 @@ Michael Tsang - Wrote tests on login registration, and adding jobs to the job bo
 
 # Sprint 5
 
-- [Product Backlog](https://trello.com/b/o27NsHIz/moment-of-muscle)
-- [Sprint Backlog](https://trello.com/b/o27NsHIz/moment-of-muscle) 
-- [Requirements](https://trello.com/b/o27NsHIz/moment-of-muscle)
 - [Trello Board](https://trello.com/b/o27NsHIz/moment-of-muscle)
-- [Burndown Chart](https://cdn.discordapp.com/attachments/804845091570319380/815760804254187580/unknown.png) 
-- [Velocity Chart](https://cdn.discordapp.com/attachments/804845091570319380/815760737918124042/unknown.png)
+- [Burndown Chart](https://cdn.discordapp.com/attachments/804845091570319380/818345346992177172/unknown.png) 
+- [Velocity Chart](https://cdn.discordapp.com/attachments/804845091570319380/818345589238136872/unknown.png)
 - [System Architecture-GitHub](https://github.com/FabricioBattaglia/Moment-of-Muscle/blob/master/artifacts/architecture.md)
 - [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
 - [Source Code](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src)
-- Automated Tests (Check src file in repo)
-- [Product Demonstration](https://www.youtube.com/watch?v=nIu14ISBOws&ab_channel=MomentofMuscle) 
+- [Automated Tests](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src/tests)
+- [Product Demonstration](https://www.youtube.com/watch?v=PnMWgVbUSVQ&ab_channel=MomentofMuscle) 
 
 ## Task Allocation
 
 Wanyea Barbel - As a user, I want to be able to add and view postings on the job board.
 
-Mitchell Wise - Work on returning data from the database to the user and be able to add, edit and delete that data
+Mitchell Wise - Push and Pull user data to/from the database (Firestore). Carried over task from last week and completed this week.
 
-Will Hall - Prepare UI templates for later use, reorganize charts
+Will Hall - Coded updated UIs for several app screens
 
-Fabricio de Siqueira Battaglia -  Integrate firebase database with the application, allowing registration, login, and logout
+Fabricio de Siqueira Battaglia -  Added email authentication to the sign up/log in process
 
-Michael Tsang - Wrote tests on login registration, and adding jobs to the job board.
+Michael Tsang - Wrote test cases on editProfile class, ResetPassword Class and Email Verification Class. 
+
+# Sprint 6
+
+- [Trello Board](https://trello.com/b/o27NsHIz/moment-of-muscle)
+- [Burndown Chart](https://cdn.discordapp.com/attachments/804845091570319380/820815568419684392/unknown.png) 
+- [Velocity Chart](https://cdn.discordapp.com/attachments/804845091570319380/820815650343485440/unknown.png)
+- [System Architecture-GitHub](https://github.com/FabricioBattaglia/Moment-of-Muscle/blob/master/artifacts/architecture.md)
+- [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
+- [Source Code](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src)
+- [Automated Tests](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src/tests)
+- [Product Demonstration](https://youtu.be/C28afdI7ljM) 
+
+## Task Allocation
+
+Wanyea Barbel - Send user's job to Firebase to be pulled from for job board.
+
+Mitchell Wise - Setup Firestore, so users can see other users data. (Working).
+
+Will Hall - Reorganized all xml files in newer format and updated all UI elements.
+
+Fabricio de Siqueira Battaglia -  Added firestore functionality to edit profile and Implemented job board retrieval from firestore.
+
+Michael Tsang - Updated test cases on edit profile to check firebase functionality. 
+
+# Sprint 7
+
+- [Trello Board](https://trello.com/b/o27NsHIz/moment-of-muscle)
+- [Burndown Chart](https://cdn.discordapp.com/attachments/804845091570319380/823325766313312276/unknown.png) 
+- [Velocity Chart](https://cdn.discordapp.com/attachments/804845091570319380/823325903274246204/unknown.png)
+- [System Architecture-GitHub](https://github.com/FabricioBattaglia/Moment-of-Muscle/blob/master/artifacts/architecture.md)
+- [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
+- [Source Code](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src)
+- [Automated Tests](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src/tests)
+- [Product Demonstration](https://youtu.be/C28afdI7ljM) 
+
+## Task Allocation
+
+Wanyea Barbel - As a user, I want to view jobs on the job board so that I am able to accept jobs.
+
+Mitchell Wise - Setup Firestore, so users can see other users data. (Working).
+
+Will Hall - Organized final templates for project w/ extra xml files (Pending submission)
+
+Fabricio de Siqueira Battaglia -  Added firestore functionality to edit profile and Implemented job board retrieval from firestore.
+
+Michael Tsang - Updated test cases on edit profile to check firebase functionality. 
+
 

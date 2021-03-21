@@ -1,4 +1,4 @@
-package com.example.mom;
+package com.example.profilescreen;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -29,6 +29,14 @@ public class HomeScreen extends AppCompatActivity {
                 goToJob();
             }
         });
+
+        Button viewPost = (Button) findViewById(R.id.toPostedButton);
+        viewPost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToPost();
+            }
+        });
     }
 
     public void goProfilePage(){
@@ -38,6 +46,11 @@ public class HomeScreen extends AppCompatActivity {
 
     public void goToJob(){
         Intent intent = new Intent(this, JobDescriptionScreen.class);
+        startActivity(intent);
+    }
+
+    public void goToPost(){
+        Intent intent = new Intent(this, JobBoard.class);
         startActivity(intent);
     }
 }
