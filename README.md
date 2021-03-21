@@ -198,7 +198,7 @@ Michael Tsang - Updated test cases on edit profile to check firebase functionali
 
 ## Task Allocation
 
-Wanyea Barbel - As a user, I want to view jobs on the job board so that I am able to accept jobs.
+Wanyea Barbel - As a user I should be available to view all jobs on the job board.
 
 Mitchell Wise - Setup Firestore, so users can see other users data. (Complete).
 
