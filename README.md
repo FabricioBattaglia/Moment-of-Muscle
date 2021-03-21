@@ -188,8 +188,8 @@ Michael Tsang - Updated test cases on edit profile to check firebase functionali
 # Sprint 7
 
 - [Trello Board](https://trello.com/b/o27NsHIz/moment-of-muscle)
-- [Burndown Chart](https://cdn.discordapp.com/attachments/804845091570319380/820815568419684392/unknown.png) 
-- [Velocity Chart](https://cdn.discordapp.com/attachments/804845091570319380/820815650343485440/unknown.png)
+- [Burndown Chart](https://cdn.discordapp.com/attachments/804845091570319380/823325766313312276/unknown.png) 
+- [Velocity Chart](https://cdn.discordapp.com/attachments/804845091570319380/823325903274246204/unknown.png)
 - [System Architecture-GitHub](https://github.com/FabricioBattaglia/Moment-of-Muscle/blob/master/artifacts/architecture.md)
 - [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
 - [Source Code](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src)
@@ -202,7 +202,7 @@ Wanyea Barbel - As a user, I want to view jobs on the job board so that I am abl
 
 Mitchell Wise - Setup Firestore, so users can see other users data. (Working).
 
-Will Hall - Reorganized all xml files in newer format and updated all UI elements.
+Will Hall - Organized final templates for project w/ extra xml files (Pending submission)
 
 Fabricio de Siqueira Battaglia -  Added firestore functionality to edit profile and Implemented job board retrieval from firestore.
 
