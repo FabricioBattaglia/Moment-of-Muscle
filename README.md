@@ -206,6 +206,5 @@ Will Hall - Organized final templates for project w/ extra xml files (Pending su
 
 Fabricio de Siqueira Battaglia -  Added profile picture functionality to profile page.
 
-Michael Tsang - Updated test cases on edit profile to check firebase functionality. 
-
+Michael Tsang - Created test cases on adding jobs and view jobs for JobDescriptionScreen and the Job Board class.
 
