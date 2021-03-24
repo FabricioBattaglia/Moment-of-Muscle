@@ -3,6 +3,7 @@ package com.example.profilescreen;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.paging.PagedList;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -22,6 +23,10 @@ import android.widget.Toast;
 
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
+import com.firebase.ui.firestore.SnapshotParser;
+import com.firebase.ui.firestore.paging.FirestorePagingAdapter;
+import com.firebase.ui.firestore.paging.FirestorePagingOptions;
+import com.firebase.ui.firestore.paging.LoadingState;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -45,9 +50,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class JobBoard extends AppCompatActivity {
+public class JobBoard extends AppCompatActivity implements FirestoreAdapter.OnListItemClick {
 
     public static final String TAG = "TAG";
+    public static String documentID;
+    public static int pos;
     TextView jobBoard;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
@@ -56,6 +63,7 @@ public class JobBoard extends AppCompatActivity {
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     RecyclerView recyclerView;
     CollectionReference ref=db.collection("job_board");
+    FirestoreAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,36 +71,34 @@ public class JobBoard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_job_board);
         recyclerView = findViewById(R.id.recyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+
+        //Query
+        Query query = db.collection("job_board");
+
+        PagedList.Config config = new PagedList.Config.Builder().setInitialLoadSizeHint(10).setPageSize(3).build();
+
+
+        //RecyclerOptions
+        FirestorePagingOptions<Job> options = new FirestorePagingOptions.Builder<Job>().setLifecycleOwner(this).setQuery(query, config, Job.class).build();
+
+        adapter = new FirestoreAdapter(options, this);
+
         recyclerView.setHasFixedSize(true);
-
-
-       ReadData();
-
-    }
-
-    void ReadData() {
-        FirestoreRecyclerOptions<Job> options = new FirestoreRecyclerOptions.Builder<Job>().setQuery(ref, Job.class).build();
-        FirestoreRecyclerAdapter<Job, MyViewHolder> adapter = new FirestoreRecyclerAdapter<Job, MyViewHolder>(options) {
-            @Override
-            protected void onBindViewHolder(@NonNull MyViewHolder holder, int position, @NonNull Job model) {
-                holder.NAME.setText("Job Title: " + model.getJob_title());
-                holder.CATEGORY.setText("Category: " + model.getCategory());
-                holder.RADIUS.setText("Radius: " + model.getRadius());
-
-            }
-
-            @NonNull
-            @Override
-            public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.single_view_layout, parent, false);
-
-                return new MyViewHolder(view);
-            }
-        };
-        adapter.startListening();
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
+
     }
 
+    @Override
+    public void onItemClick(DocumentSnapshot snapshot, int position) {
+        documentID = snapshot.getId();
+        pos = position;
+        goToJob();
+    }
+
+    public void goToJob(){
+        Intent intent = new Intent(this, jobPost.class);
+        startActivity(intent);
+    }
 
 }

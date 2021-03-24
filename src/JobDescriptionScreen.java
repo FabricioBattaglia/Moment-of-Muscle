@@ -36,14 +36,14 @@ import java.util.Map;
 
 public class JobDescriptionScreen extends AppCompatActivity {
     public static final String TAG = "TAG";
- //   FirebaseFirestore db = FirebaseFirestore.getInstance();
+    //   FirebaseFirestore db = FirebaseFirestore.getInstance();
     FirebaseFirestore fStore;
     FirebaseAuth fAuth;
- //   RecyclerView recyclerView;
+    //   RecyclerView recyclerView;
 
-  //  CollectionReference ref=db.collection("job_board");
+    //  CollectionReference ref=db.collection("job_board");
     FirestoreRecyclerOptions<Job>options;
-    FirestoreRecyclerAdapter<Job,MyViewHolder>adapter;
+    //FirestoreRecyclerAdapter<Job,MyJobHolder> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,9 +54,9 @@ public class JobDescriptionScreen extends AppCompatActivity {
         Button addJobButton = (Button) findViewById(R.id.AddJobButton);
         Spinner yardworkSpinner = (Spinner) findViewById(R.id.JobTypeSpinner);
         Spinner jobRadiusSpinner = (Spinner) findViewById(R.id.JobRadiusSpinner);
-    //    recyclerView = findViewById(R.id.recyclerView);
-   //     recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-    //    recyclerView.setHasFixedSize(true);
+        //    recyclerView = findViewById(R.id.recyclerView);
+        //     recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        //    recyclerView.setHasFixedSize(true);
 
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
@@ -108,7 +108,6 @@ public class JobDescriptionScreen extends AppCompatActivity {
     }
 
     /*
-
     void ReadData() {
         options=new FirestoreRecyclerOptions.Builder<Job>().setQuery(ref,Job.class).build();
         adapter=new FirestoreRecyclerAdapter<Job, MyViewHolder>(options) {
@@ -116,19 +115,16 @@ public class JobDescriptionScreen extends AppCompatActivity {
             protected void onBindViewHolder(@NonNull MyViewHolder holder, int position, @NonNull Job model) {
                 holder.NAME.setText(model.getJob_title());
             }
-
             @NonNull
             @Override
             public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
                 View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.single_view_layout,parent,false);
-
                 return new MyViewHolder(view);
             }
         };
         adapter.startListening();
         recyclerView.setAdapter(adapter);
 }
-
      */
 
 
