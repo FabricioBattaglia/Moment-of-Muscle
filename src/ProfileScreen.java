@@ -1,6 +1,4 @@
-//this is the profile page
-
-package com.example.profilescreen;
+package com.example.momentofmuscle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -121,12 +119,12 @@ public class ProfileScreen extends AppCompatActivity {
                 fAuth.sendPasswordResetEmail(mail).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Toast.makeText(ProfileScreen.this, "Reset Link Set To Your Email.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ProfileScreen.this, "Reset Link Sent To Your Email.", Toast.LENGTH_SHORT).show();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(ProfileScreen.this, "Error! Reset Link is Not Sent" +e.getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ProfileScreen.this, "Error! Reset Link Not Sent" +e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
             }
@@ -153,11 +151,6 @@ public class ProfileScreen extends AppCompatActivity {
 
     public void openEditProfile(){
         Intent intent = new Intent(this, EditProfile.class);
-        startActivity(intent);
-    }
-
-    public void openResetPassword(){
-        Intent intent = new Intent(this, ResetPassword.class);
         startActivity(intent);
     }
 
