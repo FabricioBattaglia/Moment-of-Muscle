@@ -50,12 +50,16 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class JobBoard extends AppCompatActivity implements FirestoreAdapter.OnListItemClick {
+public class CurrentJobsHosted extends AppCompatActivity implements FirestoreAdapter.OnListItemClick {
 
     public static final String TAG = "TAG";
     public static String documentID;
     public static int pos;
-
+    TextView jobBoard;
+    FirebaseAuth fAuth;
+    FirebaseFirestore fStore;
+    CollectionReference collectionRef; //notebookRef
+    List<Job> jobListing;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     RecyclerView recyclerView;
     CollectionReference ref=db.collection("job_board");
@@ -65,11 +69,14 @@ public class JobBoard extends AppCompatActivity implements FirestoreAdapter.OnLi
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_job_board);
+        setContentView(R.layout.activity_current_jobs_hosted);
         recyclerView = findViewById(R.id.recyclerView);
 
+        fAuth = FirebaseAuth.getInstance();
+        String currentUser = fAuth.getCurrentUser().getUid();
+
         //Query
-        Query query = db.collection("job_board").whereEqualTo("isAccepted", false);
+        Query query = db.collection("job_board").whereEqualTo("user_id", currentUser);
 
         PagedList.Config config = new PagedList.Config.Builder().setInitialLoadSizeHint(10).setPageSize(3).build();
 
@@ -93,7 +100,7 @@ public class JobBoard extends AppCompatActivity implements FirestoreAdapter.OnLi
     }
 
     public void goToJob(){
-        Intent intent = new Intent(this, JobPost.class);
+        Intent intent = new Intent(this, JobDetails.class);
         startActivity(intent);
     }
 

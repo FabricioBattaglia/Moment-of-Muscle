@@ -36,14 +36,10 @@ import java.util.Map;
 
 public class JobDescriptionScreen extends AppCompatActivity {
     public static final String TAG = "TAG";
-    //   FirebaseFirestore db = FirebaseFirestore.getInstance();
     FirebaseFirestore fStore;
     FirebaseAuth fAuth;
-    //   RecyclerView recyclerView;
 
-    //  CollectionReference ref=db.collection("job_board");
     FirestoreRecyclerOptions<Job>options;
-    //FirestoreRecyclerAdapter<Job,MyJobHolder> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,11 +48,9 @@ public class JobDescriptionScreen extends AppCompatActivity {
 
         EditText userEntryJobTitle = (EditText) findViewById(R.id.JobPostingEntry);
         Button addJobButton = (Button) findViewById(R.id.AddJobButton);
-        Spinner yardworkSpinner = (Spinner) findViewById(R.id.JobTypeSpinner);
-        Spinner jobRadiusSpinner = (Spinner) findViewById(R.id.JobRadiusSpinner);
-        //    recyclerView = findViewById(R.id.recyclerView);
-        //     recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-        //    recyclerView.setHasFixedSize(true);
+        Spinner jobTypeSpinner = (Spinner) findViewById(R.id.JobTypeSpinner);
+        EditText jobPrice = (EditText) findViewById(R.id.jobPrice);
+        EditText jobDescription = (EditText) findViewById(R.id.jobDescription);
 
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
@@ -64,31 +58,33 @@ public class JobDescriptionScreen extends AppCompatActivity {
         ArrayAdapter<String> jobTypeAdapter = new ArrayAdapter<String>(JobDescriptionScreen.this,
                 android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.JobType));
 
-        jobTypeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        yardworkSpinner.setAdapter(jobTypeAdapter);
-
         ArrayAdapter<String> jobRadiusAdapter = new ArrayAdapter<String>(JobDescriptionScreen.this,
                 android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.JobRadius));
 
-        jobTypeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        jobRadiusSpinner.setAdapter(jobRadiusAdapter);
 
+        jobTypeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        jobTypeSpinner.setAdapter(jobTypeAdapter);
+
+        jobTypeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         addJobButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Code to send information to database after button click
                 String jobTitleString = userEntryJobTitle.getText().toString();
-                String yardworkString = yardworkSpinner.getSelectedItem().toString();
-                String jobRadiusString = jobRadiusSpinner.getSelectedItem().toString();
+                String jobTypeString = jobTypeSpinner.getSelectedItem().toString();
                 String userID = fAuth.getCurrentUser().getUid();
+                String jobPriceString = jobPrice.getText().toString();
+                String jobDescriptionString = jobDescription.getText().toString();
 
                 DocumentReference documentReference = fStore.collection("job_board").document();
                 Map<String, Object> job_board = new HashMap<>();
-                job_board.put("category", yardworkString);
+                job_board.put("category", jobTypeString);
                 job_board.put("job_title", jobTitleString);
-                job_board.put("radius", jobRadiusString);
                 job_board.put("user_id", userID);
+                job_board.put("price", jobPriceString);
+                job_board.put("job_description", jobDescriptionString);
+                job_board.put("isAccepted", false);
 
                 documentReference.set(job_board).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
@@ -102,30 +98,6 @@ public class JobDescriptionScreen extends AppCompatActivity {
 
         });
 
-        //here is where we read
-        //ReadData();
-
     }
-
-    /*
-    void ReadData() {
-        options=new FirestoreRecyclerOptions.Builder<Job>().setQuery(ref,Job.class).build();
-        adapter=new FirestoreRecyclerAdapter<Job, MyViewHolder>(options) {
-            @Override
-            protected void onBindViewHolder(@NonNull MyViewHolder holder, int position, @NonNull Job model) {
-                holder.NAME.setText(model.getJob_title());
-            }
-            @NonNull
-            @Override
-            public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.single_view_layout,parent,false);
-                return new MyViewHolder(view);
-            }
-        };
-        adapter.startListening();
-        recyclerView.setAdapter(adapter);
-}
-     */
-
 
 }

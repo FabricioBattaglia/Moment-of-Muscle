@@ -27,7 +27,7 @@ OnListItemClick onListItemClick;
     public void onBindViewHolder(@NonNull JobViewHolder holder, int position, @NonNull Job model) {
         holder.list_name.setText(model.getJob_title());
         holder.list_category.setText(model.getCategory());
-        holder.list_radius.setText(model.getRadius());
+        holder.list_price.setText(model.getPrice());
     }
 
     @NonNull
@@ -63,14 +63,14 @@ OnListItemClick onListItemClick;
 
         TextView list_name;
         TextView list_category;
-        TextView list_radius;
+        TextView list_price;
 
         public JobViewHolder(@NonNull View itemView) {
             super(itemView);
 
             list_name = itemView.findViewById(R.id.NAME);
             list_category= itemView.findViewById(R.id.CATEGORY);
-            list_radius = itemView.findViewById(R.id.RADIUS);
+            list_price = itemView.findViewById(R.id.PRICE);
 
             itemView.setOnClickListener(this);
 

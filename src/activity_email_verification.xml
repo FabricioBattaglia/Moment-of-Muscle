@@ -4,24 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#808080"
     tools:context=".EmailVerification">
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="297dp"
         android:layout_height="217dp"
+        android:gravity="center_horizontal"
         android:text="Your e-mail is not verified. Please verify your e-mail
         or send another verification e-mail before you can use the app, then log in again."
         android:textAlignment="center"
-        android:textColor="#ffffff"
+        android:textColor="#000000"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16"
-        android:gravity="center_horizontal" />
+        app:layout_constraintVertical_bias="0.16" />
 
     <Button
         android:id="@+id/verificationBtn"
@@ -29,8 +28,8 @@
         android:layout_height="wrap_content"
         android:width="375dp"
         android:text="send verification code"
-        android:textColor="@color/black"
-        app:backgroundTint="@color/lime"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#2196F3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,8 +42,8 @@
         android:layout_height="wrap_content"
         android:width="375dp"
         android:text="Already verified? Click here"
-        android:textColor="@color/black"
-        app:backgroundTint="@color/lime"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#2196F3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

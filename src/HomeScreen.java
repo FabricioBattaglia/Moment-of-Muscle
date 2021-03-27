@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class HomeScreen extends AppCompatActivity {
 
     @Override
@@ -37,6 +39,27 @@ public class HomeScreen extends AppCompatActivity {
                 goToPost();
             }
         });
+
+        Button viewHost = (Button) findViewById(R.id.toHostButton);
+        viewHost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToHost();
+            }
+        });
+
+        /*
+
+        Button logoutButton = (Button) findViewById(R.id.toLogoutButton);
+        viewHost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                logout2();
+            }
+        });
+
+        */
+
     }
 
     public void goProfilePage(){
@@ -53,4 +76,18 @@ public class HomeScreen extends AppCompatActivity {
         Intent intent = new Intent(this, JobBoard.class);
         startActivity(intent);
     }
+
+    public void goToHost(){
+        Intent intent = new Intent(this, CurrentJobsHosted.class);
+        startActivity(intent);
+    }
+
+/*
+    public void logout2() {
+        FirebaseAuth.getInstance().signOut();//logout
+        startActivity(new Intent(this, SecondActivity.class));
+        finish();
+    }
+*/
+
 }

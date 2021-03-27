@@ -1,5 +1,6 @@
 package com.example.profilescreen;
 
+
 public class Job {
 
     String category;
@@ -7,22 +8,29 @@ public class Job {
     String radius;
     String user_id;
     String job_id;
-
-    public Job() {}
-
-    public Job(String job_title, String category, String radius, String job_id) {
-        this.job_title = job_title;
-        this.category = category;
-        this.radius = radius;
-        this.job_id = job_id;
-    }
+    String price;
+    String job_description;
+    String city_state;
+    Boolean isAccepted;
 
     public String getJob_id() {
         return job_id;
     }
 
-    public void setJob_id(String job_id) {
-        this.job_id = job_id;
+    public Boolean getisAccepted() {
+        return isAccepted;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public String getJob_description() {
+        return job_description;
+    }
+
+    public String getCityState() {
+        return city_state;
     }
 
     public String getCategory() {
@@ -39,22 +47,6 @@ public class Job {
 
     public String getUser_id() {
         return user_id;
-    }
-
-    public void setCategory() {
-        this.category = category;
-    }
-
-    public void setJob_title() {
-        this.job_title = job_title;
-    }
-
-    public void setRadius() {
-        this.radius = radius;
-    }
-
-    public void setUser_id() {
-        this.user_id = user_id;
     }
 
 }

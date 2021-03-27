@@ -1,6 +1,7 @@
 package com.example.profilescreen;
 
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,7 +10,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -24,11 +24,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class JobPost extends AppCompatActivity {
+public class JobDetails extends AppCompatActivity {
 
     String documentID;
     int pos;
-
     public static final String TAG = "TAG";
     TextView jobBoard;
     FirebaseAuth fAuth;
@@ -39,18 +38,16 @@ public class JobPost extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_job_post);
-
+        setContentView(R.layout.activity_job_details);
         TextView jobTitle = findViewById(R.id.jobtitleviewtext);
         TextView jobCategory = findViewById(R.id.jobcategoryviewtext);
+        TextView jobAccepted = findViewById(R.id.jobacceptedtextview);
         TextView jobPrice = findViewById(R.id.jobpriceviewtext);
         TextView jobDescription = findViewById(R.id.jobdescriptionviewtext);
         Button acceptJobButton = (Button) findViewById(R.id.acceptButton);
 
-        fAuth = FirebaseAuth.getInstance();
-        String currentUser = fAuth.getCurrentUser().getUid();
 
-        documentID = JobBoard.documentID;
+        documentID = CurrentJobsHosted.documentID;
         pos = JobBoard.pos;
 
         jobListing = new ArrayList<>();
@@ -80,8 +77,14 @@ public class JobPost extends AppCompatActivity {
                 //if(jobListing.get(0) != null) {
                 if(count[0] != 0){
                     jobTitle.setText(jobListing.get(0).job_title);
+                    if(jobListing.get(0).isAccepted == true){
+                        jobAccepted.setText("Accepted");
+                    }
+                    else {
+                        jobAccepted.setText("Not Accepted");
+                    }
                     jobCategory.setText(jobListing.get(0).category);
-               //     jobCityState.setText(jobListing.get(0).city_state);
+                    //     jobCityState.setText(jobListing.get(0).city_state);
                     jobPrice.setText(jobListing.get(0).price);
                     jobDescription.setText(jobListing.get(0).job_description);
                 }
@@ -91,42 +94,6 @@ public class JobPost extends AppCompatActivity {
             }
         });
 
-        acceptJobButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                DocumentReference documentReference = fStore.collection("job_board").document(documentID);
-                if(jobListing.get(0).user_id.equals(currentUser)) {
-                    Toast.makeText(JobPost.this, "You cannot accept your own job", Toast.LENGTH_SHORT).show();
-                }
-                else{
-                    Map<String,Object> job_board = new HashMap<>();
-
-                    job_board.put("category", jobListing.get(0).category);
-                    job_board.put("job_title", jobListing.get(0).job_title);
-                    job_board.put("user_id", jobListing.get(0).user_id);
-                    job_board.put("price", jobListing.get(0).price);
-                    job_board.put("job_description", jobListing.get(0).job_description);
-                    job_board.put("isAccepted", true);
-
-                    documentReference.set(job_board).addOnSuccessListener(new OnSuccessListener<Void>() {
-                        @Override
-                        public void onSuccess(Void aVoid) {
-                            Log.d(TAG, "onSuccess: Job accepted, wait for creator to approve "+ documentID);
-
-                        }
-                    });
-                    //go back to another page
-                    returnToMain();
-                }
-
-            }
-        });
-
-    }
-
-    public void returnToMain(){
-        Intent intent = new Intent(this, HomeScreen.class);
-        startActivity(intent);
     }
 
 }
