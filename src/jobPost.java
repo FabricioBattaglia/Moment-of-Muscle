@@ -46,6 +46,8 @@ public class JobPost extends AppCompatActivity {
         TextView jobPrice = findViewById(R.id.jobpriceviewtext);
         TextView jobDescription = findViewById(R.id.jobdescriptionviewtext);
         Button acceptJobButton = (Button) findViewById(R.id.acceptButton);
+        Button cancelButton = (Button) findViewById(R.id.cancelButton);
+
 
         fAuth = FirebaseAuth.getInstance();
         String currentUser = fAuth.getCurrentUser().getUid();
@@ -122,6 +124,18 @@ public class JobPost extends AppCompatActivity {
             }
         });
 
+        cancelButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                cancelChangesProfile();
+            }
+        });
+
+    }
+
+    public void cancelChangesProfile(){
+        Intent intent = new Intent(this, JobBoard.class);
+        startActivity(intent);
     }
 
     public void returnToMain(){

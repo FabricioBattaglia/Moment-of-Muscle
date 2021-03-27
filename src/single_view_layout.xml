@@ -56,21 +56,6 @@
         android:textSize="18dp" />
 
     <TextView
-        android:id="@+id/ISACCEPTED"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerHorizontal="false"
-        android:layout_marginTop="98dp"
-        android:layout_marginLeft="130dp"
-        android:layout_marginRight="-18dp"
-        android:text="Is Accepted"
-        android:textColor="@color/white"
-        android:textSize="18dp" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -112,22 +97,6 @@
         android:layout_marginRight="-18dp"
         android:layout_marginTop="64dp"
         android:text="Pay: "
-        android:textColor="@color/white"
-        android:textSize="20dp" />
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="69dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="false"
-        android:layout_centerHorizontal="false"
-        android:layout_marginRight="-18dp"
-        android:layout_marginTop="96dp"
-        android:text="State: "
         android:textColor="@color/white"
         android:textSize="20dp" />
 
