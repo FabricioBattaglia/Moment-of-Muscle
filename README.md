@@ -208,3 +208,25 @@ Fabricio de Siqueira Battaglia -  Added profile picture functionality to profile
 
 Michael Tsang - Created test cases on adding jobs and view jobs for JobDescriptionScreen and the Job Board class.
 
+# Sprint 8
+
+- [Trello Board](https://trello.com/b/o27NsHIz/moment-of-muscle)
+- [Burndown Chart](https://cdn.discordapp.com/attachments/804845091570319380/823325766313312276/unknown.png) 
+- [Velocity Chart](https://cdn.discordapp.com/attachments/804845091570319380/823325903274246204/unknown.png)
+- [System Architecture-GitHub](https://github.com/FabricioBattaglia/Moment-of-Muscle/blob/master/artifacts/architecture.md)
+- [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
+- [Source Code](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src)
+- [Automated Tests](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src/tests)
+- [Product Demonstration](https://youtu.be/rUmWfEvATrM) 
+
+## Task Allocation
+
+Wanyea Barbel - As a user, I want to view and accept jobs so that I am able to work.
+
+Mitchell Wise - Setup Firestore, so users can see other users data. (Complete).
+
+Will Hall - Organized final templates for project w/ extra xml files (Pending submission)
+
+Fabricio de Siqueira Battaglia -  Added profile picture functionality to profile page.
+
+Michael Tsang - Created test cases on adding jobs and view jobs for JobDescriptionScreen and the Job Board class.
