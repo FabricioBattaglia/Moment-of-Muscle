@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     tools:context=".JobPost">
 
 
@@ -15,13 +16,15 @@
         android:width="375dp"
 
         android:text="Cancel"
-        app:backgroundTint="#FF0000"
+        app:backgroundTint="@color/red"
+        android:background="@drawable/shadow"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/acceptButton"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.3" />
 
     <Button
         android:id="@+id/acceptButton"
@@ -30,13 +33,15 @@
         android:width="375dp"
         android:text="Accept"
 
-        app:backgroundTint="#2196F3"
+        app:backgroundTint="@color/blue"
+        android:background="@drawable/shadow"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.877" />
+        app:layout_constraintVertical_bias="0.757" />
 
 
     <TextView
@@ -45,8 +50,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
         android:layout_marginLeft="120dp"
-        android:text="TextView"
+        android:text="Pay Amount"
         android:textSize="20dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -61,8 +68,10 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:background="@drawable/border"
-        android:text="TextView"
+        android:text="Description Text"
         android:textSize="18dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -76,6 +85,7 @@
         android:layout_height="wrap_content"
         android:text="Category:"
         android:textSize="20dp"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.059"
@@ -89,6 +99,7 @@
         android:layout_height="wrap_content"
         android:text="Job Title:"
         android:textSize="20dp"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.068"
@@ -100,8 +111,9 @@
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pay: "
+        android:text="Pay:"
         android:textSize="20dp"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.168"
@@ -116,6 +128,7 @@
         android:layout_marginLeft="16dp"
         android:text="Job Description: "
         android:textSize="20dp"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -127,9 +140,11 @@
         android:id="@+id/jobtitleviewtext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Job Name"
         android:layout_marginLeft="120dp"
         android:textSize="20dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -139,9 +154,11 @@
         android:id="@+id/jobcategoryviewtext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Category Name"
         android:textSize="20dp"
         android:layout_marginLeft="120dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -152,14 +169,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Job Description"
-        android:textColor="#2196F3"
+        android:textColor="@color/blue"
         android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01" />
+        app:layout_constraintVertical_bias="0.029" />
 
     <View
         android:id="@+id/divider2"

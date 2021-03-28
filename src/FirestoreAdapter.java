@@ -1,4 +1,4 @@
-package com.example.profilescreen;
+package com.example.momentofmuscle;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -16,7 +16,7 @@ import com.google.firebase.firestore.DocumentSnapshot;
 
 public class FirestoreAdapter extends FirestorePagingAdapter<Job, FirestoreAdapter.JobViewHolder> {
 
-OnListItemClick onListItemClick;
+    OnListItemClick onListItemClick;
 
     public FirestoreAdapter(@NonNull FirestorePagingOptions<Job> options, OnListItemClick onListItemClick) {
         super(options);

@@ -1,6 +1,4 @@
-//this is the register screen
-
-package com.example.profilescreen;
+package com.example.momentofmuscle;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

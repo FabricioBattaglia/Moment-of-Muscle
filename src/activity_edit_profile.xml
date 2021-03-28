@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     tools:context=".EditProfile">
 
     <ImageView
@@ -26,7 +27,8 @@
         android:hint="New Name"
         android:inputType="textPersonName"
         android:text=""
-        android:textColor="#2196F3"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -42,7 +44,8 @@
         android:hint="New Phone Number"
         android:inputType="phone"
         android:text=""
-        android:textColor="#2196F3"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -57,14 +60,15 @@
         android:width="375dp"
         android:fontFamily="sans-serif"
         android:text="Save Changes"
-        android:textColor="#FFFFFF"
-        app:backgroundTint="#2196F3"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/blue"
+        android:background="@drawable/shadow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.775" />
+        app:layout_constraintVertical_bias="0.700" />
 
     <Button
         android:id="@+id/cancelChangesButton"
@@ -74,11 +78,13 @@
         android:width="375dp"
         android:fontFamily="sans-serif"
         android:text="cancel"
-        app:backgroundTint="#FF0000"
+        app:backgroundTint="@color/red"
+        android:textColor="@color/black"
+        android:background="@drawable/shadow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/saveChangesButton"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

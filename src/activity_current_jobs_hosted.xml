@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -23,7 +24,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Job History"
-        android:textColor="#2196F3"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

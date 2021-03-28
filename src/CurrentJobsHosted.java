@@ -1,4 +1,4 @@
-package com.example.profilescreen;
+package com.example.momentofmuscle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -75,7 +75,6 @@ public class CurrentJobsHosted extends AppCompatActivity implements FirestoreAda
         fAuth = FirebaseAuth.getInstance();
         String currentUser = fAuth.getCurrentUser().getUid();
 
-        //Query
         Query query = db.collection("job_board").whereEqualTo("user_id", currentUser);
 
         PagedList.Config config = new PagedList.Config.Builder().setInitialLoadSizeHint(10).setPageSize(3).build();

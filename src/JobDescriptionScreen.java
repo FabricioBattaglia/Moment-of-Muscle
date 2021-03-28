@@ -1,4 +1,5 @@
-package com.example.profilescreen;
+package com.example.momentofmuscle;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -84,7 +85,13 @@ public class JobDescriptionScreen extends AppCompatActivity {
                 job_board.put("user_id", userID);
                 job_board.put("price", jobPriceString);
                 job_board.put("job_description", jobDescriptionString);
+                job_board.put("accepted_by_id", "none");
+                job_board.put("accepted_by_name", "none");
+                job_board.put("accepted_by_email", "none");
+                job_board.put("accepted_by_phone", "none");
                 job_board.put("isAccepted", false);
+                //job_board.put("isRejected", false);
+                job_board.put("bothAccepted", false);
 
                 documentReference.set(job_board).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override

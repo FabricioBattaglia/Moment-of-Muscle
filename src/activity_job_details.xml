@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     tools:context=".JobDetails">
 
 
@@ -15,6 +16,8 @@
         android:layout_marginLeft="120dp"
         android:text="TextView"
         android:textSize="20dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -27,6 +30,8 @@
         android:text="TextView"
         android:textSize="20dp"
         android:layout_marginLeft="120dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -34,14 +39,13 @@
 
     <TextView
         android:id="@+id/jobdescriptionviewtext"
-        android:layout_width="0dp"
-        android:layout_height="170dp"
+        android:layout_width="378dp"
+        android:layout_height="118dp"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:background="@drawable/border"
-
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
         android:text="TextView"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,7 +53,57 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.682" />
+        app:layout_constraintVertical_bias="0.624" />
+
+    <Button
+        android:id="@+id/acceptButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="375dp"
+        android:text="Accept"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        app:backgroundTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.877" />
+
+    <Button
+        android:id="@+id/finishJobButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="375dp"
+        android:text="Finish Job"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        app:backgroundTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.877" />
+
+    <Button
+        android:id="@+id/rejectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:width="375dp"
+
+        android:text="Cancel"
+        android:visibility="invisible"
+        android:textColor="@color/black"
+        app:backgroundTint="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acceptButton"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView12"
@@ -57,6 +111,8 @@
         android:layout_height="wrap_content"
         android:text="Category: "
         android:textSize="20dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.059"
@@ -70,6 +126,8 @@
         android:layout_height="wrap_content"
         android:text="Job Title: "
         android:textSize="20dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.068"
@@ -83,6 +141,8 @@
         android:layout_height="wrap_content"
         android:text="State: "
         android:textSize="20dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.152"
@@ -97,6 +157,8 @@
         android:layout_marginLeft="16dp"
         android:text="Job Description: "
         android:textSize="20dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -111,6 +173,8 @@
         android:text="TextView"
         android:layout_marginLeft="120dp"
         android:textSize="20dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -123,6 +187,8 @@
         android:text="TextView"
         android:textSize="20dp"
         android:layout_marginLeft="120dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -134,7 +200,8 @@
         android:layout_height="wrap_content"
         android:text="Job Price: "
         android:textSize="20dp"
-
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
@@ -143,11 +210,43 @@
         app:layout_constraintVertical_bias="0.305" />
 
     <TextView
+        android:id="@+id/acceptBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accepted by: "
+        android:textSize="20dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.737" />
+
+    <TextView
+        android:id="@+id/acceptedAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.737" />
+
+    <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Job Details"
-        android:textColor="#2196F3"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

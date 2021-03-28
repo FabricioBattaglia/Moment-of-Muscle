@@ -1,4 +1,4 @@
-package com.example.profilescreen;
+package com.example.momentofmuscle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
