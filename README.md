@@ -225,7 +225,7 @@ Wanyea Barbel - As a user, I want to view and accept jobs so that I am able to w
 
 Mitchell Wise - Setup Firestore, so users can see other users data. (Complete).
 
-Will Hall - Organized final templates for project w/ extra xml files (Pending submission)
+Will Hall - Uploaded/revised final UI template into actual program
 
 Fabricio de Siqueira Battaglia -  Added profile picture functionality to profile page.
 
