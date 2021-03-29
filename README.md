@@ -223,7 +223,7 @@ Michael Tsang - Created test cases on adding jobs and view jobs for JobDescripti
 
 Wanyea Barbel - As a user, I want to view and accept jobs so that I am able to work.
 
-Mitchell Wise - As a user, I want to be able to click jobs on the job board, to view.
+Mitchell Wise - As a user, I want to be able to click jobs on the job board.
 
 Will Hall - Uploaded/revised final UI template into actual program
 
