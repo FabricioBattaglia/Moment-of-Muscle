@@ -229,4 +229,4 @@ Will Hall - Uploaded/revised final UI template into actual program
 
 Fabricio de Siqueira Battaglia -  Added job accept, reject, being able to see profile picture of creator of a job and who accepted the job.
 
-Michael Tsang - Created test cases on adding jobs and view jobs for JobDescriptionScreen and the Job Board class.
+Michael Tsang - Created new test on job acceptance. 
