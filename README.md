@@ -223,7 +223,7 @@ Michael Tsang - Created test cases on adding jobs and view jobs for JobDescripti
 
 Wanyea Barbel - As a user, I want to view and accept jobs so that I am able to work.
 
-Mitchell Wise - Setup Firestore, so users can see other users data. (Complete).
+Mitchell Wise - As a user, I want to select jobs so that I am able to work.
 
 Will Hall - Uploaded/revised final UI template into actual program
 
