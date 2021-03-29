@@ -227,6 +227,6 @@ Mitchell Wise - Setup Firestore, so users can see other users data. (Complete).
 
 Will Hall - Uploaded/revised final UI template into actual program
 
-Fabricio de Siqueira Battaglia -  Added profile picture functionality to profile page.
+Fabricio de Siqueira Battaglia -  Added job accept, reject, being able to see profile picture of creator of a job and who accepted the job.
 
 Michael Tsang - Created test cases on adding jobs and view jobs for JobDescriptionScreen and the Job Board class.
