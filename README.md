@@ -217,7 +217,7 @@ Michael Tsang - Created test cases on adding jobs and view jobs for JobDescripti
 - [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
 - [Source Code](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src)
 - [Automated Tests](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src/tests)
-- [Product Demonstration](https://youtu.be/rUmWfEvATrM) 
+- [Product Demonstration](https://www.youtube.com/watch?v=kuqLlmRUI0g&ab_channel=MomentofMuscle) 
 
 ## Task Allocation
 
