@@ -211,8 +211,8 @@ Michael Tsang - Created test cases on adding jobs and view jobs for JobDescripti
 # Sprint 8
 
 - [Trello Board](https://trello.com/b/o27NsHIz/moment-of-muscle)
-- [Burndown Chart](https://cdn.discordapp.com/attachments/804845091570319380/823325766313312276/unknown.png) 
-- [Velocity Chart](https://cdn.discordapp.com/attachments/804845091570319380/823325903274246204/unknown.png)
+- [Burndown Chart](https://cdn.discordapp.com/attachments/804845091570319380/825917055580635146/unknown.png) 
+- [Velocity Chart](https://cdn.discordapp.com/attachments/804845091570319380/825916930547253278/unknown.png)
 - [System Architecture-GitHub](https://github.com/FabricioBattaglia/Moment-of-Muscle/blob/master/artifacts/architecture.md)
 - [System Architecture-Google Docs](https://docs.google.com/document/d/1qICDlunFCKHLibJDC_aakXZsGWmDViGvNKEhHIgNEQ4/edit?usp=sharing)
 - [Source Code](https://github.com/FabricioBattaglia/Moment-of-Muscle/tree/master/src)
