@@ -92,6 +92,8 @@ public class JobDescriptionScreen extends AppCompatActivity {
                 job_board.put("isAccepted", false);
                 //job_board.put("isRejected", false);
                 job_board.put("bothAccepted", false);
+                job_board.put("hostFinished", false);
+                job_board.put("workerFinished", false);
 
                 documentReference.set(job_board).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override

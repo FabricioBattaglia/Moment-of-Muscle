@@ -10,6 +10,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -63,6 +66,23 @@ public class CurrentJobsHosted extends AppCompatActivity implements FirestoreAda
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     RecyclerView recyclerView;
     CollectionReference ref=db.collection("job_board");
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.list_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch(item.getItemId()){
+            case R.id.item1:
+                goToApplied();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     FirestoreAdapter adapter;
 
     @Override
@@ -100,6 +120,11 @@ public class CurrentJobsHosted extends AppCompatActivity implements FirestoreAda
 
     public void goToJob(){
         Intent intent = new Intent(this, JobDetails.class);
+        startActivity(intent);
+    }
+
+    public void goToApplied(){
+        Intent intent = new Intent(this, JobsApplied.class);
         startActivity(intent);
     }
 

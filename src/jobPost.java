@@ -107,6 +107,8 @@ public class JobPost extends AppCompatActivity {
                 list.accepted_by_name = documentSnapshot.getString("accepted_by_name");
                 list.isAccepted = documentSnapshot.getBoolean("isAccepted");
                 list.bothAccepted = documentSnapshot.getBoolean("bothAccepted");
+                list.hostFinished = documentSnapshot.getBoolean("hostFinished");
+                list.workerFinished = documentSnapshot.getBoolean("workerFinished");
                 //list.isRejected = documentSnapshot.getBoolean("isRejected");
                 jobTitle.setText(list.job_title);
                 jobCategory.setText(list.category);
@@ -137,7 +139,8 @@ public class JobPost extends AppCompatActivity {
                     job_board.put("accepted_by_name", currentName);
                     job_board.put("accepted_by_email", currentEmail);
                     job_board.put("accepted_by_phone", currentPhone);
-
+                    job_board.put("hostFinished", false);
+                    job_board.put("workerFinished", false);
                     job_board.put("isAccepted", true);
                     //job_board.put("isRejected", false);
                     job_board.put("bothAccepted", false);

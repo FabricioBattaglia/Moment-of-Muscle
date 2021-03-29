@@ -17,10 +17,12 @@ public class Job {
     //Boolean isRejected;
     Boolean isAccepted;
     Boolean bothAccepted;
+    Boolean hostFinished;
+    Boolean workerFinished;
 
     public Job(String acategory, String ajob_title, String auser_id, String aprice, String ajob_description,
                String aaccepted_by_id, String aaccepted_by_name, String aaccepted_by_email, String aaccepted_by_phone,
-               boolean aisAccepted, boolean bothAccepted) {
+               boolean aisAccepted, boolean bothAccepted, boolean hostFinished, boolean workerFinished) {
     }
 
     public Job(){
@@ -47,8 +49,16 @@ public class Job {
         return accepted_by_name;
     }
 
-    public Boolean getTsAccepted() {
+    public Boolean getIsAccepted() {
         return isAccepted;
+    }
+
+    public Boolean getWorkerFinished() {
+        return workerFinished;
+    }
+
+    public Boolean getHostFinished() {
+        return hostFinished;
     }
 
     //public Boolean getIsRejected() {

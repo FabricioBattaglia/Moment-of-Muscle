@@ -10,8 +10,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -21,17 +19,12 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
-import com.google.firebase.firestore.QuerySnapshot;
-
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-import javax.security.auth.callback.Callback;
+public class JobsAppliedDetails extends AppCompatActivity {
 
-public class JobDetails extends AppCompatActivity {
-
+    public static String hostID;
     public static int count;
     public static String acceptedID;
     public static boolean accepted;
@@ -44,30 +37,30 @@ public class JobDetails extends AppCompatActivity {
     FirebaseFirestore getAcc;
     CollectionReference collectionRef; //notebookRef
     public static Job jobListing;
-    public static Button acceptJobButton;
-    public static Button rejectButton;
+
+    public static Button cancelJobButton;
     public static Button finishJobButton;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_job_details);
+        setContentView(R.layout.activity_jobs_applied_details);
+
         TextView jobTitle = findViewById(R.id.jobtitleviewtext);
         TextView jobCategory = findViewById(R.id.jobcategoryviewtext);
         TextView jobAccepted = findViewById(R.id.jobacceptedtextview);
         TextView jobPrice = findViewById(R.id.jobpriceviewtext);
         TextView jobDescription = findViewById(R.id.jobdescriptionviewtext);
         TextView acceptedAccount = findViewById(R.id.acceptedAccount);
-        acceptJobButton = (Button) findViewById(R.id.acceptButton);
-        rejectButton = (Button) findViewById(R.id.rejectButton);
+        cancelJobButton = (Button) findViewById(R.id.cancelButton);
         finishJobButton = (Button) findViewById(R.id.finishJobButton);
         TextView acceptby = findViewById(R.id.acceptBy);
-        TextView acceptname = findViewById(R.id.acceptedAccount);
 
 
-        documentID = CurrentJobsHosted.documentID;
-        pos = JobBoard.pos;
+        documentID = JobsApplied.documentID;
+        hostID = JobsApplied.hostID;
+        pos = JobsApplied.pos;
 
         jobListing = new Job();
 
@@ -96,8 +89,7 @@ public class JobDetails extends AppCompatActivity {
                     jobListing.isAccepted = documentSnapshot.getBoolean("isAccepted");
                     //jobListing.isRejected = documentSnapshot.getBoolean("isRejected");
                     jobListing.bothAccepted = documentSnapshot.getBoolean("bothAccepted");
-                    jobListing.workerFinished = documentSnapshot.getBoolean("workerFinished");
-                    jobListing.hostFinished = documentSnapshot.getBoolean("hostFinished");
+                    accepted = true;
 
                     //PASS ALL INFO TO TEXT FIELDS
                     jobTitle.setText(jobListing.job_title);
@@ -108,48 +100,16 @@ public class JobDetails extends AppCompatActivity {
 
                     //Waiting for host to accept the job
                     if (jobListing.isAccepted == true && jobListing.bothAccepted == false) {
-                        jobAccepted.setText("Accepted");
-                        accepted = true;
-                        acceptedAccount.setText(jobListing.accepted_by_name);
-                        acceptJobButton.setText("Accept " + jobListing.accepted_by_name);
-                        rejectButton.setText("Reject " + jobListing.accepted_by_name);
-                        acceptJobButton.setVisibility(View.VISIBLE);
-                        rejectButton.setVisibility(View.VISIBLE);
-                        acceptby.setVisibility(View.VISIBLE);
-                        acceptname.setVisibility(View.VISIBLE);
-                        acceptedID = jobListing.accepted_by_id;
-                        if (accepted == true) {
-                            acceptname.setOnClickListener(new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-                                    goToAccProfile();
-                                }
-                            });
-                        }
+                        jobAccepted.setText("Pending Approval");
                     }
                     //host has accepted the job
-                    else if (jobListing.isAccepted && jobListing.bothAccepted) {
+                    else if (jobListing.isAccepted == true && jobListing.bothAccepted == true) {
+                        jobAccepted.setText("Accepted: Ongoing");
+                        accepted = true;
+                        cancelJobButton.setVisibility(View.VISIBLE);
                         finishJobButton.setVisibility(View.VISIBLE);
-                        acceptJobButton.setVisibility(View.GONE);
-                        rejectButton.setVisibility(View.GONE);
-                        jobAccepted.setText("Ongoing");
-                        acceptby.setVisibility(View.VISIBLE);
-                        acceptname.setVisibility(View.VISIBLE);
-                        acceptname.setText(jobListing.accepted_by_name);
-                        acceptedID = jobListing.accepted_by_id;
-                        acceptname.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                goToAccProfile();
-                            }
-                        });
                     } else {//rejected
-                        jobAccepted.setText("Not Yet Accepted");
-                        acceptJobButton.setVisibility(View.GONE);
-                        rejectButton.setVisibility(View.GONE);
-                        acceptby.setVisibility(View.GONE);
-                        acceptname.setVisibility(View.GONE);
-                        finishJobButton.setVisibility(View.GONE);
+
                     }
                 }
 
@@ -158,38 +118,25 @@ public class JobDetails extends AppCompatActivity {
             goToMain();
         }
 
-        acceptJobButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                DocumentReference documentReference = fStore.collection("job_board").document(documentID);
-                documentReference.addSnapshotListener(new EventListener<DocumentSnapshot>() {
-                    @Override
-                    public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
-                        Map<String,Object> job_board = new HashMap<>();
-                        job_board.put("bothAccepted", true);
-                        job_board.put("category", jobListing.category);
-                        job_board.put("job_title", jobListing.job_title);
-                        job_board.put("user_id", jobListing.user_id);
-                        job_board.put("price", jobListing.price);
-                        job_board.put("job_description", jobListing.job_description);
-                        job_board.put("accepted_by_id", jobListing.accepted_by_id);
-                        job_board.put("accepted_by_name", jobListing.accepted_by_name);
-                        job_board.put("accepted_by_email", jobListing.accepted_by_email);
-                        job_board.put("accepted_by_phone", jobListing.accepted_by_phone);
-                        job_board.put("hostFinished", jobListing.hostFinished);
-                        job_board.put("workerFinished", jobListing.workerFinished);
-                        job_board.put("isAccepted", jobListing.isAccepted);
-                        documentReference.set(job_board).addOnSuccessListener(new OnSuccessListener<Void>() {
+        if(hostID != null) {
+            DocumentReference docRef = fStore.collection("users").document(hostID);
+            docRef.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
+                @Override
+                public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
+                    acceptedAccount.setText(value.getString("fName"));
+                    acceptby.setVisibility(View.VISIBLE);
+                    acceptedAccount.setVisibility(View.VISIBLE);
+                    if (accepted == true) {
+                        acceptedAccount.setOnClickListener(new View.OnClickListener() {
                             @Override
-                            public void onSuccess(Void aVoid) {
-                                Log.d(TAG, "onSuccess: User accepted "+ documentID);
+                            public void onClick(View v) {
+                                goToAccProfile();
                             }
                         });
-                        goToMain();
                     }
-                });
-            }
-        });
+                }
+            });
+        }
 
         finishJobButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -208,7 +155,8 @@ public class JobDetails extends AppCompatActivity {
                 });
             }
         });
-        rejectButton.setOnClickListener(new View.OnClickListener() {
+
+        cancelJobButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 DocumentReference documentReference = fStore.collection("job_board").document(documentID);
@@ -237,7 +185,7 @@ public class JobDetails extends AppCompatActivity {
 
     }
     public void goToAccProfile(){
-        Intent intent = new Intent(this, WorkProfile.class);
+        Intent intent = new Intent(this, CreatorProfile.class);
         startActivity(intent);
     }
 
