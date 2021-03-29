@@ -33,9 +33,10 @@ import javax.security.auth.callback.Callback;
 public class JobDetails extends AppCompatActivity {
 
     public static int count;
+    public static boolean deleteID;
     public static String acceptedID;
     public static boolean accepted;
-    String documentID;
+    public static String documentID;
     int pos;
     public static final String TAG = "TAG";
     TextView jobBoard;
@@ -48,6 +49,7 @@ public class JobDetails extends AppCompatActivity {
     public static Button rejectButton;
     public static Button finishJobButton;
 
+    public static boolean stop;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,17 +68,19 @@ public class JobDetails extends AppCompatActivity {
         TextView acceptname = findViewById(R.id.acceptedAccount);
 
 
+        deleteID = false;
         documentID = CurrentJobsHosted.documentID;
         pos = JobBoard.pos;
 
         jobListing = new Job();
 
+        stop = false;
         fStore = FirebaseFirestore.getInstance();
         getAcc = FirebaseFirestore.getInstance();
         count = 0;
         accepted = false;
 
-        if(fStore.collection("job_board").document(documentID) != null) {
+        if(!stop) {
             DocumentReference docRef = fStore.collection("job_board").document(documentID);
             docRef.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
                 @Override
@@ -194,25 +198,26 @@ public class JobDetails extends AppCompatActivity {
         finishJobButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                stop = true;
                 goToMain();
-                fStore.collection("job_board").document(documentID).delete().addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void aVoid) {
-                        Log.d(TAG, "Job finished");
-                    }
-                }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Log.w(TAG, "Error, Cannot do that", e);
-                    }
-                });
             }
         });
+
+        /*
+        finishJobButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //deleteID = true;
+                //goToMain();
+            }
+        });
+
+         */
         rejectButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 DocumentReference documentReference = fStore.collection("job_board").document(documentID);
-                Map<String,Object> job_board = new HashMap<>();
+                Map<String, Object> job_board = new HashMap<>();
                 job_board.put("bothAccepted", false);
                 job_board.put("category", jobListing.category);
                 job_board.put("job_title", jobListing.job_title);
@@ -228,7 +233,7 @@ public class JobDetails extends AppCompatActivity {
                 documentReference.set(job_board).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Log.d(TAG, "onSuccess: User accepted "+ documentID);
+                        Log.d(TAG, "onSuccess: User accepted " + documentID);
                     }
                 });
                 goToMain();
